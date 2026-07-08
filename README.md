@@ -15,7 +15,7 @@ images, and hyperlinks.
 
 ---
 
-## Day 1 — Personal Portfolio Homepage
+## Day 1 ï¿½ Personal Portfolio Homepage
 
 ### Features Implemented
 
@@ -43,7 +43,7 @@ images, and hyperlinks.
 
 ---
 
-## Day 2 — Student Portfolio Website
+## Day 2 ï¿½ Student Portfolio Website
 
 ### Objective
 
@@ -80,3 +80,18 @@ horizontal rules, and line breaks.
 ## How to Run the Project
 
 1. Clone this repository:
+git clone https://github.com/ABman-FireBird/TechTide-Internship-Task.git
+2. Navigate to the relevant task folder:
+cd Task1        (for Day 1)
+cd Day2Task      (for Day 2)
+3. Open `index.html` in any web browser (double-click the file, or right-click 
+   and choose "Open with" your preferred browser).
+
+No build steps, servers, or dependencies are required â€” these are static 
+HTML-only pages.
+
+## Author
+
+**Abdullah Farooq**  
+[LinkedIn](https://www.linkedin.com/in/abdullah-farooq-738619302/) | 
+[GitHub](https://github.com/ABman-FireBird)
