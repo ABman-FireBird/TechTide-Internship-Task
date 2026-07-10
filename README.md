@@ -119,6 +119,47 @@ number, password, radio, checkbox, file, submit, reset), `<select>`, `<option>`,
 
 ---
 
+## Day 4 — Multi-Page Company Website
+
+### Objective
+
+Build a professional multi-page company website using HTML only, focusing on 
+semantic HTML, page navigation, and organizing a website into multiple 
+interlinked pages.
+
+### Features Implemented
+
+- Four fully linked pages: `index.html`, `about.html`, `services.html`, and 
+  `contact.html`, connected through a shared navigation bar
+- Consistent `<header>` (with company name/logo) and `<footer>` (copyright, 
+  contact email, social media links) across every page
+- Semantic structure throughout using `<header>`, `<nav>`, `<main>`, 
+  `<section>`, `<article>`, and `<footer>`
+- **Home Page:** hero section, company introduction, and featured services
+- **About Page:** company overview, mission, vision, and team members
+- **Services Page:** at least 4 services, each described with headings, 
+  paragraphs, and lists
+- **Contact Page:** office address, email, phone number, and a contact form
+- Images organized under a dedicated `images/` folder
+- Clean, consistently indented, semantic HTML with all navigation links 
+  working correctly via relative paths
+
+### HTML Elements Used
+
+`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<h1>`–`<h3>`, 
+`<p>`, `<ul>`, `<li>`, `<a>`, `<form>`, `<label>`, `<input>`, `<textarea>`
+
+### Sections Included
+
+1. Header (with navigation bar, on every page)
+2. Home: Hero Section, Company Introduction, Featured Services
+3. About: Company Overview, Mission, Vision, Team Members
+4. Services: 4+ Services (headings, paragraphs, lists)
+5. Contact: Contact Information, Office Address, Email, Phone, Contact Form
+6. Footer (copyright, contact email, social media links, on every page)
+
+---
+
 ## How to Run the Project
 
 1. Clone this repository:
@@ -127,9 +168,11 @@ git clone https://github.com/ABman-FireBird/TechTide-Internship-Task.git
 cd Task1        (for Day 1)
 cd Day2Task      (for Day 2)
 cd Day3Task      (for Day 3)
+cd Day4Task      (for Day 4)
 3. Open `index.html` in any web browser (double-click the file, or right-click 
    and choose "Open with" your preferred browser). For Day 3, clicking "Submit" 
-   will navigate to `thankyou.html` in the same folder.
+   will navigate to `thankyou.html` in the same folder. For Day 4, use the 
+   navigation bar to move between the Home, About, Services, and Contact pages.
 
 No build steps, servers, or dependencies are required — these are static 
 HTML-only pages.
