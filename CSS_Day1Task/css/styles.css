@@ -1,0 +1,85 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+
+/* Global Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+    
+/* Header and Footer */
+header, footer {
+    background-color: #65524D;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+
+/* Sections */
+section {
+    background-color: #B5EF8A;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Links */
+a {
+    color: #7FC29B;
+    text-decoration: none;
+}
+
+
+/* Navigation */
+nav a {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+nav ul{
+    color: #FFFFFF;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    color: #B5EF8A; 
+}
+
+/* Forms */
+input[type="submit"]{
+    background-color: #7FC29B;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #65524D;
+    color: #FFFFFF;
+}
