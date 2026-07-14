@@ -5,17 +5,17 @@
 ## Objective
 
 The objective of this project is to practice writing clean, semantic HTML and 
-organizing a webpage properly without using CSS or JavaScript. This assignment 
-focuses on correct use of semantic tags, document structure, headings, lists, 
-images, and hyperlinks.
+organizing a webpage properly, and — starting with the CSS module — to apply 
+external CSS styling to build clean, consistent, and visually appealing pages.
 
 ## Technologies Used
 
-- HTML5 only (no CSS, no JavaScript)
+- HTML5 (Days 1–4)
+- HTML5 + External CSS3 (CSS Day 1 onward)
 
 ---
 
-## Day 1 � Personal Portfolio Homepage
+## Day 1 – Personal Portfolio Homepage
 
 ### Features Implemented
 
@@ -43,7 +43,7 @@ images, and hyperlinks.
 
 ---
 
-## Day 2 � Student Portfolio Website
+## Day 2 – Student Portfolio Website
 
 ### Objective
 
@@ -160,22 +160,74 @@ interlinked pages.
 
 ---
 
+## CSS Day 1 — Styled Multi-Page Company Website
+
+### Objective
+
+Apply CSS fundamentals to the existing Multi-Page Company Website (from Day 4) 
+using a single external stylesheet, to understand how CSS works with HTML and 
+how to build a clean, consistent, and visually appealing site.
+
+### CSS Concepts Used
+
+- External stylesheet (`css/style.css`) linked to all four HTML pages — no 
+  inline or internal CSS
+- Google Fonts import (`Open Sans` for body text, `Poppins` for headings)
+- Universal selector reset (`* { margin: 0; padding: 0; box-sizing: border-box; }`)
+- Consistent color palette (brown/green/white theme) applied via background 
+  and text colors
+- Typography styling for all headings (`h1`–`h6`) and paragraphs, including 
+  font size and line height
+- Navigation bar styling: default list styling removed, items laid out 
+  horizontally with `display: flex`, and hover effects on links
+- Margin and padding applied throughout for even spacing and readability
+- Image rule (`max-width`, `height: auto`, `display: block`) to keep any 
+  future images from overflowing their containers
+- Button and link styling with hover states (form submit button, nav links)
+- **Bonus Challenge:** Sticky navigation bar using `position: sticky`
+
+### Features Implemented
+
+- All four pages (`index.html`, `about.html`, `services.html`, `contact.html`) 
+  now share one external stylesheet at `css/style.css`
+- Header and footer styled consistently across every page
+- Section-level background and text colors for a clean, professional look
+- Contact form's submit button styled with clear default/hover contrast
+- Sticky header that stays pinned to the top while scrolling
+
+### Sections Included
+
+1. Header (sticky, with navigation bar)
+2. Home: Hero Section, Company Introduction, Featured Services
+3. About: Company Overview, Mission, Vision, Team Members
+4. Services: 4+ Services (headings, paragraphs, lists)
+5. Contact: Contact Information, Office Address, Email, Phone, Contact Form
+6. Footer
+
+---
+
 ## How to Run the Project
 
 1. Clone this repository:
+```
 git clone https://github.com/ABman-FireBird/TechTide-Internship-Task.git
+```
 2. Navigate to the relevant task folder:
-cd Task1        (for Day 1)
-cd Day2Task      (for Day 2)
-cd Day3Task      (for Day 3)
-cd Day4Task      (for Day 4)
+```
+cd Task1            (for Day 1)
+cd Day2Task          (for Day 2)
+cd Day3Task          (for Day 3)
+cd Day4Task          (for Day 4)
+cd CSS_Day1Task      (for CSS Day 1)
+```
 3. Open `index.html` in any web browser (double-click the file, or right-click 
    and choose "Open with" your preferred browser). For Day 3, clicking "Submit" 
-   will navigate to `thankyou.html` in the same folder. For Day 4, use the 
-   navigation bar to move between the Home, About, Services, and Contact pages.
+   will navigate to `thankyou.html` in the same folder. For Day 4 and CSS Day 1, 
+   use the navigation bar to move between the Home, About, Services, and 
+   Contact pages.
 
 No build steps, servers, or dependencies are required — these are static 
-HTML-only pages.
+HTML/CSS-only pages.
 
 ## Author
 
