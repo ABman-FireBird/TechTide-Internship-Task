@@ -206,6 +206,59 @@ how to build a clean, consistent, and visually appealing site.
 
 ---
 
+## CSS Day 2 — Box Model & Layout
+
+### Objective
+
+Enhance the Multi-Page Company Website by applying the CSS Box Model and 
+improving the overall layout, focusing on spacing, sizing, borders, 
+containers, and card-based design.
+
+### CSS Concepts Used
+
+- Box Model applied throughout: consistent margin, padding, and borders on 
+  key elements (header, footer, sections, cards)
+- Main content container (`.container`) with a max-width of `1200px`, 
+  centered on the page using `margin: 0 auto`
+- Card layout (`.card`) used for Services, Team Members, and Featured 
+  Content, each with border, border-radius, padding, margin, and box-shadow
+- Buttons styled with background color, padding, border-radius, hover 
+  effect, and cursor pointer
+- Navigation bar improvements: spacing between menu items, hover effects, 
+  and active-page highlighting (`.active`)
+- Clean footer containing copyright, contact information, and social 
+  media links
+- Consistent image sizing (`width: 300px`, `max-width: 100%`) to prevent 
+  overflow
+- Custom list marker color on card lists using `::marker`
+- **Bonus Challenge:** "Back to Top" button using a plain HTML anchor link 
+  (`href="#top"`) and CSS — no JavaScript
+
+### Features Implemented
+
+- All page content wrapped in a centered `.container` for consistent layout 
+  across every page
+- Services (Services page), Team Members (About page), and Featured 
+  Services (Home page) each redesigned as individual `.card` elements 
+  instead of plain text blocks
+- Active nav link highlighted in green on each page so users can see 
+  which page they're on
+- Submit button styled with rounded corners, shadow, and a hover color change
+- "Back to Top" link added to the bottom of every page's main content, 
+  scrolling back to the sticky header
+
+### Sections Included
+
+1. Header (sticky, with navigation bar, active-page highlighting)
+2. Home: Hero Section, Company Introduction, Featured Services (cards)
+3. About: Company Overview, Mission, Vision, Team Members (cards)
+4. Services: 3+ Services (cards)
+5. Contact: Contact Information, Office Address, Email, Phone, Contact Form
+6. Back to Top button (bonus)
+7. Footer
+
+---
+
 ## How to Run the Project
 
 1. Clone this repository:
@@ -219,12 +272,14 @@ cd Day2Task          (for Day 2)
 cd Day3Task          (for Day 3)
 cd Day4Task          (for Day 4)
 cd CSS_Day1Task      (for CSS Day 1)
+cd CSS_Day2Task      (for CSS Day 2)
 ```
 3. Open `index.html` in any web browser (double-click the file, or right-click 
    and choose "Open with" your preferred browser). For Day 3, clicking "Submit" 
-   will navigate to `thankyou.html` in the same folder. For Day 4 and CSS Day 1, 
-   use the navigation bar to move between the Home, About, Services, and 
-   Contact pages.
+   will navigate to `thankyou.html` in the same folder. For Day 4, CSS Day 1, 
+   and CSS Day 2, use the navigation bar to move between the Home, About, 
+   Services, and Contact pages. On CSS Day 2, click "Back to Top" at the 
+   bottom of any page to scroll back to the header.
 
 No build steps, servers, or dependencies are required — these are static 
 HTML/CSS-only pages.
