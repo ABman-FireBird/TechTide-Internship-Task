@@ -1,0 +1,166 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+
+/* Global Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+    
+/* Header and Footer */
+header, footer {
+    background-color: #65524D;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* Sections */
+section {
+    background-color: #B5EF8A;
+    color: #4A3F3B;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #65524D;
+}
+
+/* Images */
+img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Links */
+a {
+    color: #7FC29B;
+    text-decoration: none;
+}
+
+
+/* Navigation */
+nav a {
+    font-weight: bold;
+    color: #FFFFFF;
+    transition: .3s;
+}
+nav ul{
+    color: #FFFFFF;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a:hover {
+    color: #B5EF8A; 
+}
+
+/* Forms */
+input[type="submit"]{
+    background-color: #65524D;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+input[type="submit"]:hover{
+    background-color: #7FC29B;
+    color: #FFFFFF;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: #FFFFFF;
+    border: 1px solid #65524D;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card ul li::marker {
+    color: #7FC29B;
+}
+
+/* Active Nav Link */
+.active {
+    color: #B5EF8A;
+}
+
+/* Heading Alignment */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Back to Top */
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #65524D;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.back-to-top:hover {
+    background-color: #7FC29B;
+    color: #FFFFFF;
+}
