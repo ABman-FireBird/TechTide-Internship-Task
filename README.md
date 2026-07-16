@@ -12,6 +12,7 @@ external CSS styling to build clean, consistent, and visually appealing pages.
 
 - HTML5 (Days 1–4)
 - HTML5 + External CSS3 (CSS Day 1 onward)
+- CSS Flexbox for layout and responsive design (CSS Day 3)
 
 ---
 
@@ -259,6 +260,63 @@ containers, and card-based design.
 
 ---
 
+## CSS Day 3 — Flexbox Layout & Responsive Design
+
+### Objective
+
+Rebuild the Multi-Page Company Website's layout using Flexbox, focusing on 
+arranging the hero section, service/team cards, and footer into flexible, 
+responsive multi-column layouts instead of relying purely on box-model 
+spacing.
+
+### CSS Concepts Used
+
+- Hero section built with `display: flex` — text content on one side, image 
+  on the other, using `.hero-text` and `.hero-image` with `flex` sizing and 
+  `flex-wrap` for smaller screens
+- Services and Team Members converted from individual `.card` blocks into a 
+  `.flex-cards` container, laying cards out in a wrapping flex row 
+  (`flex: 1 1 240px`) so they reflow based on available width
+- Cards given `display: flex; flex-direction: column` internally so buttons 
+  (`.btn`) align to the bottom of each card (`margin-top: auto`) regardless 
+  of content length
+- Header restructured with `display: flex; justify-content: space-between` 
+  to keep the logo/heading and navigation aligned on one row
+- Footer redesigned into multiple flexible columns (`.footer-columns`, 
+  `.footer-col`) — Company Info, Quick Links, Contact Details, and Follow Us 
+  — each column sized with `flex: 1 1 200px`
+- Circular profile images for Team Members using `border-radius: 50%` and 
+  `object-fit: cover`
+- **Bonus Challenge:** Responsive navigation using a media query 
+  (`max-width: 700px`) that stacks the header vertically and left-aligns 
+  the nav links on smaller screens
+
+### Features Implemented
+
+- Home page hero section now displays intro text and an image side-by-side 
+  on wider screens, stacking on smaller ones
+- Featured Services (Home), Services (Services page), and Team Members 
+  (About page) all use the new flex-based card layout instead of a plain 
+  vertical list of cards
+- Footer rebuilt into four columns: Company Info, Quick Links, Contact 
+  Details, and Follow Us, each independently wrapping on narrow screens
+- Navigation bar collapses cleanly on mobile-sized viewports via the 
+  responsive media query
+- "Back to Top" button retained and re-styled to match the updated design
+
+### Sections Included
+
+1. Header (flex layout, responsive nav)
+2. Home: Hero Section (flex), Company Introduction, Featured Services 
+   (flex cards)
+3. About: Company Overview, Mission, Vision, Team Members (flex cards)
+4. Services: 4 Services (flex cards)
+5. Contact: Contact Information, Office Address, Email, Phone, Contact Form
+6. Back to Top button
+7. Footer (multi-column flex layout)
+
+---
+
 ## How to Run the Project
 
 1. Clone this repository:
@@ -273,13 +331,16 @@ cd Day3Task          (for Day 3)
 cd Day4Task          (for Day 4)
 cd CSS_Day1Task      (for CSS Day 1)
 cd CSS_Day2Task      (for CSS Day 2)
+cd CSS_Day3Task      (for CSS Day 3)
 ```
 3. Open `index.html` in any web browser (double-click the file, or right-click 
    and choose "Open with" your preferred browser). For Day 3, clicking "Submit" 
    will navigate to `thankyou.html` in the same folder. For Day 4, CSS Day 1, 
-   and CSS Day 2, use the navigation bar to move between the Home, About, 
-   Services, and Contact pages. On CSS Day 2, click "Back to Top" at the 
-   bottom of any page to scroll back to the header.
+   CSS Day 2, and CSS Day 3, use the navigation bar to move between the Home, 
+   About, Services, and Contact pages. On CSS Day 2 and CSS Day 3, click 
+   "Back to Top" at the bottom of any page to scroll back to the header. 
+   CSS Day 3 also includes a responsive layout — try resizing the browser 
+   window or viewing it on a smaller screen to see the flexbox reflow.
 
 No build steps, servers, or dependencies are required — these are static 
 HTML/CSS-only pages.
