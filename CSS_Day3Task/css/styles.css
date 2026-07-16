@@ -1,0 +1,297 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+
+/* Global Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+    
+/* Header and Footer */
+header, footer {
+    background-color: #65524D;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+/* Header layout (flex) */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header h1{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* Sections */
+section {
+    background-color: #EAF8E1;;
+    color: #4A3F3B;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #65524D;
+}
+
+/* Images */
+img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Links */
+a {
+    color: #7FC29B;
+    text-decoration: none;
+}
+
+
+/* Navigation */
+nav a {
+    font-weight: bold;
+    color: #FFFFFF;
+    transition: .3s;
+}
+nav ul{
+    color: #FFFFFF;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a:hover {
+    color: #B5EF8A; 
+}
+
+/* Hero Section (Flexbox) text on one side, image on the other */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.hero h2{
+    font-size: 2rem;
+}
+
+.hero-text{
+    flex: 2;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+/* Flex Cards used for Services and Team sections */
+.flex-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.flex-cards h2 {
+    flex: 1 1 100%;
+}
+
+.flex-cards .card {
+    flex: 1 1 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 auto 15px auto;
+}   
+
+.designation {
+    font-weight: bold;
+    color: #65524D;
+}
+
+/* Forms */
+input[type="submit"]{
+    background-color: #65524D;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+input[type="submit"]:hover{
+    background-color: #7FC29B;
+    color: #FFFFFF;
+}
+
+/* Buttons (Service Cards) */
+
+.btn {
+    display: inline-block;
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #65524D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #7FC29B;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: #FFFFFF;
+    border: 1px solid #65524D;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 220px;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card ul li::marker {
+    color: #7FC29B;
+}
+
+/* Active Nav Link */
+.active {
+    color: #B5EF8A;
+}
+
+/* Heading Alignment */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Back to Top */
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #65524D;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.back-to-top:hover {
+    background-color: #7FC29B;
+    color: #FFFFFF;
+    transition: .3s;
+}
+
+/* Footer Layout (Flexbox)  multi-column */
+.footer-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-col {
+    flex: 1 1 200px;
+}
+
+.footer-col h3{
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col a {
+    color: #B5EF8A;
+}
+
+.footer-col a:hover{
+    color: #FFFFFF;
+}
+
+/* Bonus: Responsive Navigation */
+@media (max-width: 700px){
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        gap: 15px;
+    }
+}
