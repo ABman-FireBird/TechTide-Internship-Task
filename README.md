@@ -1,18 +1,29 @@
-# Personal Portfolio Homepage
+# Abdullah's Software House — TechTide Internship Portfolio
 
 **Student Name:** Abdullah Farooq
 
+## Project Description
+
+This repository contains all tasks completed during the TechTide Summer
+Internship 2026, tracking the progression from static HTML pages to a fully
+responsive, animated, multi-page company website styled entirely with modern
+CSS — including CSS variables, Flexbox, Grid, media queries, and a pure-CSS
+dark mode toggle.
+
 ## Objective
 
-The objective of this project is to practice writing clean, semantic HTML and 
-organizing a webpage properly, and — starting with the CSS module — to apply 
-external CSS styling to build clean, consistent, and visually appealing pages.
+The objective of this project is to practice writing clean, semantic HTML,
+then progressively apply CSS fundamentals, layout techniques, and modern
+responsive design practices to build a professional, polished company
+website — "Abdullah's Software House" — from the ground up.
 
 ## Technologies Used
 
 - HTML5 (Days 1–4)
 - HTML5 + External CSS3 (CSS Day 1 onward)
-- CSS Flexbox for layout and responsive design (CSS Day 3)
+- CSS Variables, Flexbox, and CSS Grid (Final Assignment)
+- [Font Awesome](https://fontawesome.com/) (via CDN, for footer social icons)
+- Google Fonts (`Open Sans` and `Poppins`)
 
 ---
 
@@ -141,14 +152,8 @@ interlinked pages.
 - **Services Page:** at least 4 services, each described with headings, 
   paragraphs, and lists
 - **Contact Page:** office address, email, phone number, and a contact form
-- Images organized under a dedicated `images/` folder
 - Clean, consistently indented, semantic HTML with all navigation links 
   working correctly via relative paths
-
-### HTML Elements Used
-
-`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<h1>`–`<h3>`, 
-`<p>`, `<ul>`, `<li>`, `<a>`, `<form>`, `<label>`, `<input>`, `<textarea>`
 
 ### Sections Included
 
@@ -171,7 +176,7 @@ how to build a clean, consistent, and visually appealing site.
 
 ### CSS Concepts Used
 
-- External stylesheet (`css/style.css`) linked to all four HTML pages — no 
+- External stylesheet (`css/styles.css`) linked to all four HTML pages — no 
   inline or internal CSS
 - Google Fonts import (`Open Sans` for body text, `Poppins` for headings)
 - Universal selector reset (`* { margin: 0; padding: 0; box-sizing: border-box; }`)
@@ -182,19 +187,10 @@ how to build a clean, consistent, and visually appealing site.
 - Navigation bar styling: default list styling removed, items laid out 
   horizontally with `display: flex`, and hover effects on links
 - Margin and padding applied throughout for even spacing and readability
-- Image rule (`max-width`, `height: auto`, `display: block`) to keep any 
-  future images from overflowing their containers
+- Image rule (`max-width`, `height: auto`, `display: block`) to keep images 
+  from overflowing their containers
 - Button and link styling with hover states (form submit button, nav links)
 - **Bonus Challenge:** Sticky navigation bar using `position: sticky`
-
-### Features Implemented
-
-- All four pages (`index.html`, `about.html`, `services.html`, `contact.html`) 
-  now share one external stylesheet at `css/style.css`
-- Header and footer styled consistently across every page
-- Section-level background and text colors for a clean, professional look
-- Contact form's submit button styled with clear default/hover contrast
-- Sticky header that stays pinned to the top while scrolling
 
 ### Sections Included
 
@@ -219,8 +215,8 @@ containers, and card-based design.
 
 - Box Model applied throughout: consistent margin, padding, and borders on 
   key elements (header, footer, sections, cards)
-- Main content container (`.container`) with a max-width of `1200px`, 
-  centered on the page using `margin: 0 auto`
+- Main content container (`.container`) with a max-width, centered on the 
+  page using `margin: 0 auto`
 - Card layout (`.card`) used for Services, Team Members, and Featured 
   Content, each with border, border-radius, padding, margin, and box-shadow
 - Buttons styled with background color, padding, border-radius, hover 
@@ -229,24 +225,8 @@ containers, and card-based design.
   and active-page highlighting (`.active`)
 - Clean footer containing copyright, contact information, and social 
   media links
-- Consistent image sizing (`width: 300px`, `max-width: 100%`) to prevent 
-  overflow
-- Custom list marker color on card lists using `::marker`
 - **Bonus Challenge:** "Back to Top" button using a plain HTML anchor link 
   (`href="#top"`) and CSS — no JavaScript
-
-### Features Implemented
-
-- All page content wrapped in a centered `.container` for consistent layout 
-  across every page
-- Services (Services page), Team Members (About page), and Featured 
-  Services (Home page) each redesigned as individual `.card` elements 
-  instead of plain text blocks
-- Active nav link highlighted in green on each page so users can see 
-  which page they're on
-- Submit button styled with rounded corners, shadow, and a hover color change
-- "Back to Top" link added to the bottom of every page's main content, 
-  scrolling back to the sticky header
 
 ### Sections Included
 
@@ -260,60 +240,174 @@ containers, and card-based design.
 
 ---
 
-## CSS Day 3 — Flexbox Layout & Responsive Design
+## CSS Day 3 — Flexbox Layout
 
 ### Objective
 
-Rebuild the Multi-Page Company Website's layout using Flexbox, focusing on 
-arranging the hero section, service/team cards, and footer into flexible, 
-responsive multi-column layouts instead of relying purely on box-model 
-spacing.
+Enhance the Multi-Page Company Website by implementing CSS Flexbox 
+throughout, learning to build flexible, responsive layouts using modern 
+CSS layout techniques.
 
 ### CSS Concepts Used
 
-- Hero section built with `display: flex` — text content on one side, image 
-  on the other, using `.hero-text` and `.hero-image` with `flex` sizing and 
-  `flex-wrap` for smaller screens
-- Services and Team Members converted from individual `.card` blocks into a 
-  `.flex-cards` container, laying cards out in a wrapping flex row 
-  (`flex: 1 1 240px`) so they reflow based on available width
-- Cards given `display: flex; flex-direction: column` internally so buttons 
-  (`.btn`) align to the bottom of each card (`margin-top: auto`) regardless 
-  of content length
-- Header restructured with `display: flex; justify-content: space-between` 
-  to keep the logo/heading and navigation aligned on one row
-- Footer redesigned into multiple flexible columns (`.footer-columns`, 
-  `.footer-col`) — Company Info, Quick Links, Contact Details, and Follow Us 
-  — each column sized with `flex: 1 1 200px`
-- Circular profile images for Team Members using `border-radius: 50%` and 
-  `object-fit: cover`
-- **Bonus Challenge:** Responsive navigation using a media query 
-  (`max-width: 700px`) that stacks the header vertically and left-aligns 
-  the nav links on smaller screens
-
-### Features Implemented
-
-- Home page hero section now displays intro text and an image side-by-side 
-  on wider screens, stacking on smaller ones
-- Featured Services (Home), Services (Services page), and Team Members 
-  (About page) all use the new flex-based card layout instead of a plain 
-  vertical list of cards
-- Footer rebuilt into four columns: Company Info, Quick Links, Contact 
-  Details, and Follow Us, each independently wrapping on narrow screens
-- Navigation bar collapses cleanly on mobile-sized viewports via the 
-  responsive media query
-- "Back to Top" button retained and re-styled to match the updated design
+- `display: flex`, `flex-direction`, `justify-content`, `align-items`, 
+  `gap`, and `flex-wrap` applied across the header, hero, cards, and footer
+- `flex-grow` / `flex-shrink` used via the shorthand `flex: 1 1 240px` on cards
+- **Navigation:** converted to a Flexbox row — logo on the left, nav links 
+  on the right, spaced evenly
+- **Hero Section:** text and image laid out side-by-side using Flexbox, 
+  vertically centered
+- **Services Section:** flexible card row with title, description, and a 
+  button per card, wrapping responsively (4 service cards)
+- **Team Section:** flexible card row with profile image, name, 
+  designation, and short description per member
+- **Footer:** reorganized into a 4-column Flexbox layout — Company Info, 
+  Quick Links, Contact Details, and Follow Us
+- **Bonus Challenge:** Responsive navigation bar — a media query collapses 
+  the header and nav into a stacked layout on small screens
 
 ### Sections Included
 
-1. Header (flex layout, responsive nav)
-2. Home: Hero Section (flex), Company Introduction, Featured Services 
-   (flex cards)
-3. About: Company Overview, Mission, Vision, Team Members (flex cards)
-4. Services: 4 Services (flex cards)
-5. Contact: Contact Information, Office Address, Email, Phone, Contact Form
-6. Back to Top button
-7. Footer (multi-column flex layout)
+1. Header (Flexbox row: logo left, nav right)
+2. Home: Hero (Flexbox), Company Introduction, Featured Services (Flexbox cards)
+3. About: Company Overview, Mission, Vision, Team Members (Flexbox cards 
+   with images and descriptions)
+4. Services: 4 Services (Flexbox cards with buttons)
+5. Contact: Contact Information, Contact Form
+6. Footer (4-column Flexbox layout)
+
+---
+
+## Final CSS Assignment — Complete Responsive Company Website
+
+### Objective
+
+Transform the multi-page company website into a modern, responsive, and 
+visually polished site using all CSS concepts learned throughout the 
+internship — typography, color systems, Flexbox, Grid, animations, and 
+responsive design — combined into a single, production-quality project.
+
+### CSS Concepts Used
+
+**Typography & Color Theme**
+- Google Fonts (`Open Sans` for body, `Poppins` for headings) with a clear 
+  font hierarchy and consistent line height
+- Full color system defined with **CSS Variables** (`:root`), including a 
+  dedicated `--color-surface` variable for elements that need to invert in 
+  dark mode, separate from `--color-white` (which stays constant for text)
+
+**Navigation Bar**
+- Fully responsive Flexbox navigation with logo left / links right
+- Hover effects with an animated underline (`::after` pseudo-element)
+- Active page indicator (`.active`)
+- Sticky navigation (`position: sticky`)
+
+**Hero Section**
+- Diagonal gradient background (`linear-gradient`) using the site's 
+  existing brand colors — no separate hero image needed
+- Heading, description, and a Call-to-Action button (`.hero-cta`) linking 
+  to the Services page
+
+**Cards**
+- Card layouts for **Services**, **Team Members**, and **Testimonials** 
+  (new section), each with border-radius, box-shadow, hover lift 
+  animation, and a smooth `transition`
+- Testimonials section specifically laid out using **CSS Grid** 
+  (`repeat(auto-fit, minmax(250px, 1fr))`), while Services/Team continue 
+  to use Flexbox — demonstrating appropriate use of each layout tool
+
+**Buttons**
+- Consistent button styling (`.btn`, `.hero-cta`, `.back-to-top`, 
+  `input[type="submit"]`) with hover effects, transitions, rounded 
+  corners, and colors drawn from the shared variable palette
+
+**Layout**
+- Flexbox (navigation, hero, cards, footer) and CSS Grid (testimonials) 
+  used together
+- Centered `.container` with consistent max-width and padding across 
+  every page
+
+**Responsive Design**
+- Three media query breakpoints: **992px** (laptop), **768px** (tablet), 
+  and **576px** (mobile) — adjusting hero text size, card wrapping, 
+  navigation layout, and footer column stacking at each stage
+
+**Animations & Effects** (5 implemented)
+1. Card hover lift + shadow transition
+2. Hero CTA button hover transition
+3. Navigation underline animation on hover
+4. Fade-in animation on section load (`@keyframes fadeIn`)
+5. Smooth scrolling (`scroll-behavior: smooth`)
+
+**Footer**
+- Four-column layout: Company Information, Quick Links, Contact Details, 
+  and Social Media Icons (via Font Awesome), plus copyright
+
+### Bonus Challenges Completed (2 of 2)
+
+1. **Scroll-to-Top functionality** — a "Back to Top" button combined with 
+   `scroll-behavior: smooth`, HTML/CSS only, no JavaScript
+2. **Dark Mode Toggle** — implemented entirely in pure CSS using the 
+   checkbox-hack pattern (`body:has(#dark-toggle:checked)`) to override 
+   the `:root` color variables site-wide, with **no JavaScript**
+
+### Design Choices
+
+The final assignment intentionally builds on the same brown/green brand 
+identity established back in CSS Day 1, rather than introducing a new 
+color scheme. All colors were formalized into CSS variables so the same 
+two-color identity could be consistently reused — including being cleanly 
+inverted for dark mode without duplicating any styles. Team member photos 
+are currently placeholder (the same personal photo reused across all three 
+profiles) pending consent from teammates before using their actual photos.
+
+### Sections Included
+
+1. Header (sticky, responsive, active-page indicator, dark mode toggle)
+2. Home: Hero (gradient + CTA), Who We Are, Featured Services, Testimonials (Grid)
+3. About: Company Overview, Mission, Vision, Team Members (with images)
+4. Services: 4 Services (cards with buttons)
+5. Contact: Contact Information, Contact Form
+6. Footer (4-column layout with social icons)
+
+---
+
+## Folder Structure
+
+```
+TechTide-Internship-Task/
+├── Task1/                  Day 1 - Personal Portfolio Homepage (HTML)
+├── Day2Task/                Day 2 - Student Portfolio Website (HTML)
+├── Day3Task/                Day 3 - Student Registration Form (HTML)
+├── Day4Task/                Day 4 - Multi-Page Company Website (HTML)
+├── CSS_Day1Task/             CSS Day 1 - Styled Company Website
+│   ├── index.html
+│   ├── about.html
+│   ├── services.html
+│   ├── contact.html
+│   └── css/
+│       └── styles.css
+├── CSS_Day2Task/             CSS Day 2 - Box Model & Layout
+│   └── (same structure as above)
+├── CSS_Day3Task/             CSS Day 3 - Flexbox Layout
+│   ├── index.html
+│   ├── about.html
+│   ├── services.html
+│   ├── contact.html
+│   ├── img/
+│   └── css/
+│       └── styles.css
+├── CSS_Day4Task/             Final CSS Assignment - Complete Responsive Site
+│   ├── index.html
+│   ├── about.html
+│   ├── services.html
+│   ├── contact.html
+│   ├── img/
+│   ├── output/               Screenshots (light & dark mode, all pages)
+│   └── css/
+│       └── styles.css
+└── README.md
+```
 
 ---
 
@@ -332,18 +426,28 @@ cd Day4Task          (for Day 4)
 cd CSS_Day1Task      (for CSS Day 1)
 cd CSS_Day2Task      (for CSS Day 2)
 cd CSS_Day3Task      (for CSS Day 3)
+cd CSS_Day4Task      (for the Final CSS Assignment)
 ```
-3. Open `index.html` in any web browser (double-click the file, or right-click 
-   and choose "Open with" your preferred browser). For Day 3, clicking "Submit" 
-   will navigate to `thankyou.html` in the same folder. For Day 4, CSS Day 1, 
-   CSS Day 2, and CSS Day 3, use the navigation bar to move between the Home, 
-   About, Services, and Contact pages. On CSS Day 2 and CSS Day 3, click 
-   "Back to Top" at the bottom of any page to scroll back to the header. 
-   CSS Day 3 also includes a responsive layout — try resizing the browser 
-   window or viewing it on a smaller screen to see the flexbox reflow.
+3. Open `index.html` in any web browser (double-click the file, or 
+   right-click and choose "Open with" your preferred browser). Use the 
+   navigation bar to move between Home, About, Services, and Contact. 
+   Click "Back to Top" to scroll smoothly to the header. On the Final CSS 
+   Assignment (`CSS_Day4Task`), click the 🌙 icon in the navigation bar to 
+   toggle Dark Mode.
 
 No build steps, servers, or dependencies are required — these are static 
-HTML/CSS-only pages.
+HTML/CSS-only pages. An internet connection is needed on first load for 
+Google Fonts and Font Awesome icons (loaded via CDN).
+
+## Screenshots
+
+Light mode and dark mode screenshots of every page (Home, About, Services, 
+Contact) for the Final CSS Assignment are included in 
+`CSS_Day4Task/output/`.
+
+## GitHub Repository
+
+[https://github.com/ABman-FireBird/TechTide-Internship-Task](https://github.com/ABman-FireBird/TechTide-Internship-Task)
 
 ## Author
 

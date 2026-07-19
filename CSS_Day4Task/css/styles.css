@@ -1,0 +1,470 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+/* CSS Variables */
+:root {
+    --color-primary: #65524D;
+    --color-accent: #7FC29B;
+    --color-accent-light: #B5EF8A;
+    --color-section-bg: #EAF8E1;
+    --color-text: #333333;
+    --color-text-dark: #4A3F3B;
+    --color-white: #FFFFFF;
+    --color-surface: #FFFFFF;
+}
+
+
+/* Global Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Bonus 1: Scroll to Top (smooth scroll behavior) */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-text);
+  font-size: 16px;
+  background-color: var(--color-white);
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+    
+/* Header and Footer */
+header, footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 20px;
+}
+
+/* Header layout (flex) */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header h1{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* Sections */
+section {
+    background-color: var(--color-section-bg);
+    color: var(--color-text-dark);
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid var(--color-primary);
+    animation: fadeIn 0.6s ease-in;
+}
+
+/* Alternating section background for visual rhythm */
+.section-alt {
+    background-color: var(--color-surface);
+}
+
+/* Fade-in animation on page load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Images */
+img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Links */
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+
+/* Navigation */
+nav a {
+    font-weight: bold;
+    color: var(--color-white);
+    transition: .3s;
+    position: relative;
+}
+nav ul{
+    color: var(--color-white);
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a:hover {
+    color: var(--color-accent-light); 
+}
+
+nav a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent-light);
+    transition: width 0.3s ease;
+}
+
+nav a:hover:after{
+    width: 100%;
+}
+
+/* Hero Section (Flexbox) text on one side, image on the other */
+.hero {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    border: none;
+    color: var(--color-white);
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.hero h2{
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.hero-cta {
+    display: inline-block;
+    background-color: var(--color-surface);
+    color: var(--color-text-dark);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-cta:hover {
+    background-color: var(--color-accent-light);
+    color: var(--color-text-dark);
+    transform: translateY(-3px);
+}
+
+/* Flex Cards used for Services and Team sections */
+.flex-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.flex-cards h2 {
+    flex: 1 1 100%;
+}
+
+.flex-cards .card {
+    flex: 1 1 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Testimonials Section (CSS Grid) */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.testimonials-grid h2{
+    grid-column: 1 / -1;
+}
+
+.testimonial-quote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.testimonial-role {
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 auto 15px auto;
+}   
+
+.designation {
+    font-weight: bold;
+    color: var(--color-text-dark);
+}
+
+/* Forms */
+input[type="submit"]{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+input[type="submit"]:hover{
+    background-color: var(--color-accent-light);
+    color: var(--color-white);
+}
+
+/* Buttons (Service Cards) */
+
+.btn {
+    display: inline-block;
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: var(--color-accent-light);
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-primary);
+    padding: 30px;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card ul li::marker {
+    color: var(--color-accent);
+}
+
+/* Active Nav Link */
+.active {
+    color: var(--color-accent-light);
+}
+
+/* Heading Alignment */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Back to Top */
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.back-to-top:hover {
+    background-color: var(--color-accent-light);
+    color: var(--color-white);
+    transition: .3s;
+}
+
+/* Footer Layout (Flexbox)  multi-column */
+.footer-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-col {
+    flex: 1 1 200px;
+}
+
+.footer-col h3{
+    color: var(--color-white);
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col a {
+    color: var(--color-accent-light);
+}
+
+.footer-col a:hover{
+    color: var(--color-white);
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.4rem;
+}
+
+.social-icons a {
+    color: var(--color-accent-light);
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--color-white);
+    transform: scale(1.15);
+}
+
+/* Laptop and below (max-width: 992px) */
+@media (max-width: 992px){
+    .container {
+        padding: 15px;
+    }
+    .hero h2{
+        font-size: 1.9rem;
+    }
+}
+
+/* Tablet and below (max-width: 768px) */
+@media (max-width: 768px){
+    .hero {
+        padding: 40px 20px;
+    }
+    .flex-cards .card, 
+    .testimonials-grid .card {
+        flex: 1 1 100%;
+    }
+    nav ul {
+    gap: 18px;
+    font-size: 16px;
+}
+}
+
+/* Mobile (max-width: 576px) */
+@media (max-width: 576px ){
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .hero h2{
+        font-size: 1.5rem;
+    }
+    .hero-cta {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-columns{
+        flex-direction: column;
+    }
+}
+
+/* Bonus: Dark Mode Toggle (pure CSS, no JavaScript) */
+.dark-toggle-input {
+    display: none;
+}
+
+.dark-toggle-label {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+body:has(#dark-toggle:checked){
+    --color-primary: #2E2A28;
+    --color-accent: #7FC29B;
+    --color-accent-light: #B5EF8A;
+    --color-section-bg: #1E1E1E;
+    --color-text: #EAEAEA;
+    --color-text-dark: #EAEAEA;
+    --color-surface: #2B2B2B;
+    background-color: var(--color-section-bg);
+}
