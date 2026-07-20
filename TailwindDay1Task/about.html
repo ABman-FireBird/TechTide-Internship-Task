@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Abdullah's Software House - About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-primary': '#65524D',
+                        'brand-accent': '#7FC29B',
+                        'brand-accent-light': '#B5EF8A',
+                        'brand-section': '#EAF8E1',
+                        'brand-dark': '#4A3F3B',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="bg-brand-primary text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center px-6 py-4 gap-4">
+            <h1 class="text-xl md:text-2xl font-bold">Abdullah's Software House</h1>
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-base font-semibold">
+                    <li><a href="index.html" class="hover:text-brand-accent-light transition">Home</a></li>
+                    <li><a href="about.html" class="text-brand-accent-light hover:text-white transition">About</a></li>
+                    <li><a href="services.html" class="hover:text-brand-accent-light transition">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-brand-accent-light transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-8">
+        
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-primary text-center mb-6">
+                Company Overview
+            </h2>
+            <article>
+                <p class="text-gray-700 text-lg leading-8 text-center max-w-3xl mx-auto">
+                    Abdullah's Software House was founded with a simple goal: to make
+                    technology simple, accessible, and useful for businesses of
+                    every size.
+                </p>
+            </article>
+        </section>
+
+        
+        <section class="bg-brand-section rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-primary text-center mb-6">
+                Our Mission
+            </h2>
+            <article>
+                <p class="text-gray-700 text-lg leading-8 text-center max-w-3xl mx-auto">
+                    To deliver innovative, reliable, and affordable technology
+                    solutions that help our clients achieve their business goals.
+                </p>
+            </article>
+        </section>
+
+        
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-primary text-center mb-6">
+                Our Vision
+            </h2>
+            <article>
+                <p class="text-gray-700 text-lg leading-8 text-center max-w-3xl mx-auto">
+                    To become a leading technology partner recognized for quality,
+                    creativity, and long-term client relationships.
+                </p>
+            </article>
+        </section>
+
+        
+        <section class="bg-brand-section rounded-xl shadow-lg p-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-brand-primary text-center mb-12">
+                Our Team
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <article class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <img src="img/img2.JPG" alt="Abdullah Farooq" 
+                         class="w-32 h-32 rounded-full object-cover mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-brand-primary">Abdullah Farooq</h3>
+                    <p class="text-brand-dark font-semibold mb-2">Chief Executive Officer</p>
+                    <p class="text-gray-600 text-sm">Leads the company's vision and business strategy. Has 10 years of experience in the industry.</p>
+                </article>
+
+        
+                <article class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <img src="img/img2.JPG" alt="Hamza Khaliq" 
+                         class="w-32 h-32 rounded-full object-cover mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-brand-primary">Hamza Khaliq</h3>
+                    <p class="text-brand-dark font-semibold mb-2">Web Developer</p>
+                    <p class="text-gray-600 text-sm">Develops and maintains the company's Websites.</p>
+                </article>
+
+            
+                <article class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+                    <img src="img/img2.JPG" alt="M Abdullah" 
+                         class="w-32 h-32 rounded-full object-cover mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-brand-primary">M Abdullah</h3>
+                    <p class="text-brand-dark font-semibold mb-2">AI Engineer</p>
+                    <p class="text-gray-600 text-sm">Integrates AI technologies into applications.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <div class="text-center py-8">
+            <a href="#top" class="inline-block bg-brand-primary text-white px-6 py-3 rounded-lg hover:bg-brand-dark hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                Back to Top
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="bg-brand-primary text-white pt-12 pb-6">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Abdullah's Software House</h3>
+                    <p class="text-gray-300 mb-4">Your trusted partner for smart and reliable technology solutions.</p>
+                    <p class="text-gray-400 text-sm">&copy; 2026 Abdullah's Software House. All rights reserved.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-brand-accent-light hover:text-white hover:translate-x-1 transition duration-300 inline-block">Home</a></li>
+                        <li><a href="about.html" class="text-brand-accent-light hover:text-white hover:translate-x-1 transition duration-300 inline-block">About</a></li>
+                        <li><a href="services.html" class="text-brand-accent-light hover:text-white hover:translate-x-1 transition duration-300 inline-block">Services</a></li>
+                        <li><a href="contact.html" class="text-brand-accent-light hover:text-white hover:translate-x-1 transition duration-300 inline-block">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Details</h3>
+                    <p class="text-gray-300 mb-2">Email: abdullahfarooq.dev.cs@gmail.com</p>
+                    <p class="text-gray-300">Phone: +92 300 1234567</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex gap-4 text-2xl">
+                        <a href="https://facebook.com" class="text-brand-accent-light hover:text-white hover:scale-110 transition duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" class="text-brand-accent-light hover:text-white hover:scale-110 transition duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="text-brand-accent-light hover:text-white hover:scale-110 transition duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
