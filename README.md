@@ -457,47 +457,192 @@ company — and includes all standard landing page components.
 7. Contact Section (Contact form)
 8. Footer (Company info, links, contact, social icons)
 
+
 ---
 
-## Folder Structure
-TechTide-Internship-Task/
-├── Task1/ # Day 1 - Personal Portfolio Homepage (HTML)
-├── Day2Task/ # Day 2 - Student Portfolio Website (HTML)
-├── Day3Task/ # Day 3 - Student Registration Form (HTML)
-├── Day4Task/ # Day 4 - Multi-Page Company Website (HTML)
-├── CSS_Day1Task/ # CSS Day 1 - Styled Company Website
-│ ├── index.html
-│ ├── about.html
-│ ├── services.html
-│ ├── contact.html
-│ └── css/
-│ └── styles.css
-├── CSS_Day2Task/ # CSS Day 2 - Box Model & Layout
-│ └── (same structure as above)
-├── CSS_Day3Task/ # CSS Day 3 - Flexbox Layout
-│ ├── index.html
-│ ├── about.html
-│ ├── services.html
-│ ├── contact.html
-│ ├── img/
-│ └── css/
-│ └── styles.css
-├── CSS_Day4Task/ # Final CSS Assignment - Complete Responsive Site
-│ ├── index.html
-│ ├── about.html
-│ ├── services.html
-│ ├── contact.html
-│ ├── img/
-│ ├── output/ # Screenshots (light & dark mode, all pages)
-│ └── css/
-│ └── styles.css
-├── TailwindDay1Task/ # Week 3, Day 1 - Tailwind CSS (Company Website)
-│ ├── index.html
-│ ├── about.html
-│ ├── services.html
-│ ├── contact.html
-│ ├── img/
-├── TailwindDay2Task/ # Week 3, Day 2 - Tailwind CSS (AI Landing Page)
-│ ├── index.html
-│ └── img/
-└── README.md # This file
+## How to Run the Project
+
+### Option 1: Direct Open in Browser
+1. Clone the repository:
+
+git clone https://github.com/ABman-FireBird/TechTide-Internship-Task.git
+
+2. Navigate to the relevant task folder:
+
+cd Task1 (for Day 1)
+cd Day2Task (for Day 2)
+cd Day3Task (for Day 3)
+cd Day4Task (for Day 4)
+cd CSS_Day1Task (for CSS Day 1)
+cd CSS_Day2Task (for CSS Day 2)
+cd CSS_Day3Task (for CSS Day 3)
+cd CSS_Day4Task (for the Final CSS Assignment)
+cd TailwindDay1Task (for Week 3, Day 1 - Tailwind Company Website)
+cd TailwindDay2Task (for Week 3, Day 2 - Tailwind AI Landing Page)
+
+3. Open `index.html` in any web browser (double-click the file, or 
+   right-click and choose "Open with" your preferred browser).
+
+### Option 2: Live Server (VS Code)
+1. Install the "Live Server" extension in VS Code
+2. Right-click on `index.html`
+3. Select "Open with Live Server"
+
+### Option 3: GitHub Pages
+1. Push the repository to GitHub
+2. Go to Settings → Pages
+3. Select the main branch and root folder
+4. Your site will be available at `https://[username].github.io/[repo-name]/`
+
+No build steps, servers, or dependencies are required — these are static 
+HTML/CSS-only pages. An internet connection is needed on first load for 
+Google Fonts and Font Awesome icons (loaded via CDN).
+
+---
+
+## Features Implemented Across All Tasks
+
+### Day 1 — HTML Portfolio
+- ✅ Semantic HTML structure
+- ✅ Navigation with internal links
+- ✅ Hero section with introduction
+- ✅ About Me with profile image
+- ✅ Skills as unordered list
+- ✅ Education as ordered list with GPA
+- ✅ Contact with `mailto:` and `tel:` links
+- ✅ Footer with copyright
+
+### Day 2 — Enhanced Portfolio
+- ✅ Course table with proper structure
+- ✅ Nested lists for hobbies
+- ✅ Horizontal rules between sections
+- ✅ Line breaks in About Me
+- ✅ Social Media section
+
+### Day 3 — Registration Form
+- ✅ Four fieldset sections
+- ✅ All input types (text, email, tel, date, number, password, file, radio, checkbox)
+- ✅ Select dropdown for City and Country
+- ✅ Textarea for Bio
+- ✅ Submit and Reset buttons
+- ✅ Thank You page
+
+### Day 4 — Multi-Page Website
+- ✅ 4 linked pages
+- ✅ Consistent header and footer
+- ✅ Hero section with CTA
+- ✅ Services with 4+ cards
+- ✅ About with team members
+- ✅ Contact with form
+- ✅ Semantic HTML throughout
+
+### CSS Day 1 — Styled Website
+- ✅ External CSS
+- ✅ Google Fonts
+- ✅ CSS Variables
+- ✅ Flexbox layouts
+- ✅ CSS Grid
+- ✅ Media Queries
+- ✅ Hover effects
+- ✅ Dark Mode (pure CSS)
+- ✅ Animations
+
+### CSS Day 2 — Box Model & Layout
+- ✅ Consistent margin, padding, borders
+- ✅ Main content container with max-width
+- ✅ Card layout with border-radius and box-shadow
+- ✅ Button styling with hover effects
+- ✅ Active page highlighting
+- ✅ Back to Top button
+
+### CSS Day 3 — Flexbox Layout
+- ✅ Flexbox navigation (logo left, nav right)
+- ✅ Flexbox hero (text + image side-by-side)
+- ✅ Flexbox cards (services, team)
+- ✅ Flexbox footer (4 columns)
+- ✅ Responsive navigation (stacked on mobile)
+
+### Final CSS Assignment — Complete Responsive Site
+- ✅ CSS Variables for color system
+- ✅ Flexbox and Grid layouts
+- ✅ 3 breakpoint media queries (992px, 768px, 576px)
+- ✅ 5 animations/effects (card hover, CTA hover, nav underline, fade-in, smooth scroll)
+- ✅ Dark Mode toggle (pure CSS)
+- ✅ Testimonials section with CSS Grid
+- ✅ Back to Top button
+
+### Week 3, Day 1 — Tailwind CSS (Company Website)
+- ✅ Tailwind CDN setup
+- ✅ Custom color configuration
+- ✅ All Tailwind utilities used
+- ✅ Responsive design
+- ✅ Hover effects
+- ✅ Dark Mode (with localStorage)
+- ✅ No custom CSS
+
+### Week 3, Day 2 — Tailwind CSS (AI Landing Page)
+- ✅ Complete AI landing page from scratch
+- ✅ 6 feature cards with icons
+- ✅ 3 pricing plans with featured plan
+- ✅ Client testimonials with profile images
+- ✅ Contact form
+- ✅ Gradient hero background
+- ✅ Fully responsive
+- ✅ Hover effects and animations
+- ✅ No custom CSS
+
+---
+
+## Evaluation Criteria
+
+| Criteria | Max Marks |
+|----------|-----------|
+| Proper Use of Tailwind Utilities | 6 |
+| Responsive Layout | 4 |
+| UI Design & Consistency | 4 |
+| Code Organization | 3 |
+| GitHub Repository & README | 2 |
+| PDF Documentation | 1 |
+| **Total** | **20** |
+
+---
+
+## Learning Outcomes
+
+By completing this project, I have learned:
+
+- ✅ How to write semantic, accessible HTML
+- ✅ How to structure a multi-page website
+- ✅ How to style websites with CSS (variables, Flexbox, Grid)
+- ✅ How to make websites responsive with media queries
+- ✅ How to use Tailwind CSS utility classes
+- ✅ How to configure Tailwind with custom colors
+- ✅ How to build dark mode (pure CSS & with JavaScript)
+- ✅ How to create hover effects and animations
+- ✅ How to organize code for maintainability
+- ✅ How to use Git and GitHub for version control
+- ✅ How to write professional documentation (README, PDF reports)
+- ✅ How to build a complete AI landing page from scratch
+- ✅ How to implement pricing plans with featured plan highlighting
+- ✅ How to create gradient backgrounds in Tailwind
+
+---
+
+## Screenshots
+
+Screenshots for the Final CSS Assignment (light mode and dark mode of every page) are included in `CSS_Day4Task/output/`.
+
+---
+
+## Author
+
+**Abdullah Farooq**  
+TechTide Summer Intern 2026  
+[LinkedIn](https://www.linkedin.com/in/abdullah-farooq-738619302/)  
+[GitHub](https://github.com/ABman-FireBird)
+
+---
+
+## License
+
+This project is created for educational purposes as part of the TechTide Summer Internship 2026.
