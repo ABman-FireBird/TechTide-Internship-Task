@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<div class="flex min-h-screen">
+
+  <!-- Sidebar -->
+  <aside class="hidden md:flex md:w-64 bg-gray-900 text-gray-300 flex-col">
+    <div class="px-6 py-5 text-lg font-bold text-white border-b border-gray-800">
+      Abdullah Farooq Admin Dashboard
+    </div>
+    <nav class="flex-1 px-3 py-4 space-y-1">
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md bg-gray-800 text-white">
+        <span>🏠</span> Dashboard
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-gray-800 hover:text-white transition">
+        <span>👥</span> Users
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-gray-800 hover:text-white transition">
+        <span>📁</span> Projects
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-gray-800 hover:text-white transition">
+        <span>📊</span> Analytics
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-gray-800 hover:text-white transition">
+        <span>✉️</span> Messages
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-gray-800 hover:text-white transition">
+        <span>⚙️</span> Settings
+      </a>
+    </nav>
+    <div class="px-3 py-4 border-t border-gray-800">
+      <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-gray-800 hover:text-white transition">
+        <span>🚪</span> Logout
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <div class="flex-1 flex flex-col">
+
+    <!-- Top Navbar -->
+    <header class="bg-white shadow-sm px-4 md:px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-base font-bold text-gray-900 md:hidden">Abdullah Farooq Admin Dashboard</span>
+        <input type="text" placeholder="Search..."
+          class="hidden sm:block border border-gray-200 rounded-md px-3 py-1.5 text-sm w-40 md:w-64 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div class="flex items-center gap-4">
+        <button class="relative text-gray-500 hover:text-gray-800 transition">
+          🔔
+          <span class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] rounded-full px-1">3</span>
+        </button>
+        <div class="relative group">
+          <button class="flex items-center gap-2">
+            <span class="w-8 h-8 rounded-full bg-blue-600 text-white text-xs flex items-center justify-center">AF</span>
+            <span class="hidden sm:block text-sm font-medium">Abdullah Farooq</span>
+          </button>
+          <div class="absolute right-0 mt-2 w-40 bg-white border border-gray-100 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition">
+            <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-50">Profile</a>
+            <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-50">Settings</a>
+            <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-50">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="p-4 md:p-6 space-y-6">
+
+      <!-- Statistic Cards -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+        <div class="bg-white rounded-lg shadow p-5">
+          <div class="flex items-center justify-between">
+            <span class="text-2xl">👥</span>
+            <span class="text-xs text-gray-400">This month</span>
+          </div>
+          <p class="text-sm text-gray-500 mt-3">Total Users</p>
+          <p class="text-2xl font-bold">1,284</p>
+          <p class="text-xs text-green-600 mt-1">+8% vs last month</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-5">
+          <div class="flex items-center justify-between">
+            <span class="text-2xl">📁</span>
+            <span class="text-xs text-gray-400">Ongoing</span>
+          </div>
+          <p class="text-sm text-gray-500 mt-3">Active Projects</p>
+          <p class="text-2xl font-bold">32</p>
+          <p class="text-xs text-green-600 mt-1">+3 new this week</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-5">
+          <div class="flex items-center justify-between">
+            <span class="text-2xl">💰</span>
+            <span class="text-xs text-gray-400">This month</span>
+          </div>
+          <p class="text-sm text-gray-500 mt-3">Revenue</p>
+          <p class="text-2xl font-bold">$48,250</p>
+          <p class="text-xs text-green-600 mt-1">+12% vs last month</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-5">
+          <div class="flex items-center justify-between">
+            <span class="text-2xl">✅</span>
+            <span class="text-xs text-gray-400">This week</span>
+          </div>
+          <p class="text-sm text-gray-500 mt-3">Tasks Completed</p>
+          <p class="text-2xl font-bold">214</p>
+          <p class="text-xs text-red-500 mt-1">-4% vs last week</p>
+        </div>
+
+      </section>
+
+      <!-- Recent Projects Table -->
+      <section class="bg-white rounded-lg shadow p-5">
+        <h2 class="text-lg font-semibold mb-4">Recent Projects</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm text-left">
+            <thead>
+              <tr class="border-b text-gray-500">
+                <th class="py-2 pr-4">Project Name</th>
+                <th class="py-2 pr-4">Client</th>
+                <th class="py-2 pr-4">Status</th>
+                <th class="py-2 pr-4">Deadline</th>
+                <th class="py-2 pr-4">Progress</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b hover:bg-gray-50 transition">
+                <td class="py-3 pr-4 font-medium">Website Revamp</td>
+                <td class="py-3 pr-4">Orbit Retail</td>
+                <td class="py-3 pr-4"><span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">Completed</span></td>
+                <td class="py-3 pr-4">12 Jul 2026</td>
+                <td class="py-3 pr-4 w-40">
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-green-500 h-2 rounded-full" style="width:100%"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-gray-50 transition">
+                <td class="py-3 pr-4 font-medium">Mobile Banking App</td>
+                <td class="py-3 pr-4">Finara</td>
+                <td class="py-3 pr-4"><span class="bg-yellow-100 text-yellow-700 text-xs px-2 py-1 rounded-full">In Progress</span></td>
+                <td class="py-3 pr-4">30 Jul 2026</td>
+                <td class="py-3 pr-4 w-40">
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-blue-500 h-2 rounded-full" style="width:65%"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-gray-50 transition">
+                <td class="py-3 pr-4 font-medium">Inventory Dashboard</td>
+                <td class="py-3 pr-4">Northgate Logistics</td>
+                <td class="py-3 pr-4"><span class="bg-yellow-100 text-yellow-700 text-xs px-2 py-1 rounded-full">In Progress</span></td>
+                <td class="py-3 pr-4">05 Aug 2026</td>
+                <td class="py-3 pr-4 w-40">
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-blue-500 h-2 rounded-full" style="width:40%"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-gray-50 transition">
+                <td class="py-3 pr-4 font-medium">Marketing Website</td>
+                <td class="py-3 pr-4">Bloom Cosmetics</td>
+                <td class="py-3 pr-4"><span class="bg-red-100 text-red-700 text-xs px-2 py-1 rounded-full">Delayed</span></td>
+                <td class="py-3 pr-4">20 Jul 2026</td>
+                <td class="py-3 pr-4 w-40">
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-red-500 h-2 rounded-full" style="width:25%"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="py-3 pr-4 font-medium">HR Management Tool</td>
+                <td class="py-3 pr-4">Solace HR</td>
+                <td class="py-3 pr-4"><span class="bg-yellow-100 text-yellow-700 text-xs px-2 py-1 rounded-full">In Progress</span></td>
+                <td class="py-3 pr-4">15 Aug 2026</td>
+                <td class="py-3 pr-4 w-40">
+                  <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-blue-500 h-2 rounded-full" style="width:55%"></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Team Members + Recent Activity -->
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+        <!-- Team Members -->
+        <div class="lg:col-span-2 bg-white rounded-lg shadow p-5">
+          <h2 class="text-lg font-semibold mb-4">Team Members</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+            <div class="flex items-center gap-4 border border-gray-100 rounded-lg p-3">
+              <span class="w-12 h-12 rounded-full bg-gray-700 text-white text-sm font-medium flex items-center justify-center">HA</span>
+              <div>
+                <p class="font-medium">Hamza Ali</p>
+                <p class="text-xs text-gray-500">UI/UX Designer</p>
+                <p class="text-xs text-gray-400">hamza.ali@gaminal.com</p>
+                <span class="inline-block mt-1 bg-green-100 text-green-700 text-[10px] px-2 py-0.5 rounded-full">Online</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 border border-gray-100 rounded-lg p-3">
+              <span class="w-12 h-12 rounded-full bg-gray-700 text-white text-sm font-medium flex items-center justify-center">SA</span>
+              <div>
+                <p class="font-medium">Sara Ahmed</p>
+                <p class="text-xs text-gray-500">Frontend Developer</p>
+                <p class="text-xs text-gray-400">sara.ahmed@gaminal.com</p>
+                <span class="inline-block mt-1 bg-green-100 text-green-700 text-[10px] px-2 py-0.5 rounded-full">Online</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 border border-gray-100 rounded-lg p-3">
+              <span class="w-12 h-12 rounded-full bg-gray-700 text-white text-sm font-medium flex items-center justify-center">BK</span>
+              <div>
+                <p class="font-medium">Bilal Khan</p>
+                <p class="text-xs text-gray-500">Backend Developer</p>
+                <p class="text-xs text-gray-400">bilal.khan@gaminal.com</p>
+                <span class="inline-block mt-1 bg-gray-100 text-gray-600 text-[10px] px-2 py-0.5 rounded-full">Away</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 border border-gray-100 rounded-lg p-3">
+              <span class="w-12 h-12 rounded-full bg-gray-700 text-white text-sm font-medium flex items-center justify-center">MF</span>
+              <div>
+                <p class="font-medium">Mahnoor Fatima</p>
+                <p class="text-xs text-gray-500">Project Manager</p>
+                <p class="text-xs text-gray-400">mahnoor.f@gaminal.com</p>
+                <span class="inline-block mt-1 bg-green-100 text-green-700 text-[10px] px-2 py-0.5 rounded-full">Online</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="bg-white rounded-lg shadow p-5">
+          <h2 class="text-lg font-semibold mb-4">Recent Activity</h2>
+          <ul class="space-y-4 text-sm">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-2 h-2 rounded-full bg-blue-500"></span>
+              <div>
+                <p>New user registered</p>
+                <p class="text-xs text-gray-400">2 hours ago</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-2 h-2 rounded-full bg-green-500"></span>
+              <div>
+                <p>Project "Website Revamp" updated</p>
+                <p class="text-xs text-gray-400">4 hours ago</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-2 h-2 rounded-full bg-yellow-500"></span>
+              <div>
+                <p>Meeting scheduled with Finara team</p>
+                <p class="text-xs text-gray-400">Yesterday</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-2 h-2 rounded-full bg-purple-500"></span>
+              <div>
+                <p>Payment received from Bloom Cosmetics</p>
+                <p class="text-xs text-gray-400">Yesterday</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 w-2 h-2 rounded-full bg-red-500"></span>
+              <div>
+                <p>Task "API Integration" completed</p>
+                <p class="text-xs text-gray-400">2 days ago</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="text-center text-xs text-gray-400 py-4">
+      © 2025 Abdullah Farooq. All rights reserved.
+    </footer>
+
+  </div>
+</div>
+
+</body>
+</html>
