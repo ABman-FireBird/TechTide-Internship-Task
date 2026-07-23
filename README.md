@@ -8,14 +8,16 @@ This repository contains all tasks completed during the TechTide Summer
 Internship 2026, tracking the progression from static HTML pages to a fully
 responsive, animated, multi-page company website styled entirely with modern
 CSS, and advancing into **Tailwind CSS** utility-first framework projects, 
-culminating in an Admin Dashboard application.
+culminating in an Admin Dashboard application and a fully responsive
+E-Commerce Product Page.
 
 ## Objective
 
 The objective of this project is to practice writing clean, semantic HTML,
 then progressively apply CSS fundamentals, layout techniques, modern
 responsive design practices, and finally master **Tailwind CSS** by building 
-professional company websites, AI landing pages, and functional admin dashboards.
+professional company websites, AI landing pages, admin dashboards, and
+e-commerce product pages.
 
 ## Technologies Used
 
@@ -24,7 +26,7 @@ professional company websites, AI landing pages, and functional admin dashboards
 - CSS Variables, Flexbox, and CSS Grid
 - **Tailwind CSS** (Week 3, via CDN)
 - [Font Awesome](https://fontawesome.com/) (via CDN, for footer social icons)
-- Google Fonts (`Open Sans` and `Poppins`)
+- Google Fonts (`Open Sans`, `Poppins`, `Playfair Display`, `Inter`, `IBM Plex Mono`)
 
 ---
 
@@ -160,35 +162,65 @@ Build a clean, modern, and fully responsive **Admin Dashboard** layout using **T
 
 ---
 
+## Tailwind Day 4 Task — E-Commerce Product Page ("The Bindery" Bookstore)
+
+### Objective
+
+Design and develop a modern, responsive **E-Commerce Product Page** using **Tailwind CSS**, focused on building real-world UI components while strengthening responsive layout, spacing, typography, and reusable design patterns[cite: 1]. Product category chosen: **Books** (fiction, non-fiction, politics, history, and classics).
+
+### Features Implemented
+
+- ✅ **Navigation Bar:** Sticky dark header with brand logo, category links (Fiction, Non-Fiction, History, Classics) hidden on mobile and shown from `md:` breakpoint up, a search bar, and cart/profile icons with a live cart-count badge[cite: 1].
+- ✅ **Product Showcase:** Large book cover image with a 4-thumbnail gallery grid, book title, author/genre subtext, star rating with review count, current price, struck-through original price, and a foil-stamped discount badge[cite: 1].
+- ✅ **Product Details:** Format selector (Hardcover / Paperback / eBook) standing in for size/color options, a quantity stepper, in-stock status indicator, and an ISBN code in place of a SKU[cite: 1].
+- ✅ **Action Buttons:** Add to Cart, Buy Now, and Wishlist buttons, each with distinct hover and transition effects[cite: 1].
+- ✅ **Product Features:** Six-icon feature row (Fast Delivery, Warranty, Secure Payment, Easy Returns, Premium Quality, 24/7 Support) on a dark full-width band[cite: 1].
+- ✅ **Customer Reviews:** Three review cards, each with a customer avatar, name, star rating, and review text[cite: 1].
+- ✅ **Related Products:** Four-card responsive grid, each with a book cover, title, price, and a "View Details" button[cite: 1].
+- ✅ **Footer:** Company info, customer support links, quick links, social icons, and a copyright line[cite: 1].
+
+### Tailwind Concepts Used
+
+| Category | Tailwind Classes Used | Purpose |
+|----------|----------------------|---------|
+| **Flexbox** | `flex`, `items-center`, `justify-between`, `flex-wrap`, `gap-4` | Navbar layout, button rows, card content alignment |
+| **Grid** | `grid`, `grid-cols-2`, `md:grid-cols-3`, `lg:grid-cols-4`, `lg:grid-cols-6` | Thumbnail gallery, features row, reviews and related products grids |
+| **Responsive Breakpoints** | `sm:`, `md:`, `lg:` prefixes (e.g. `hidden md:flex`) | Collapsing nav links/search on mobile, adjusting grid column counts per screen size |
+| **Typography** | `font-display`, `font-mono`, `text-4xl`, `font-bold`, `leading-relaxed`, `tracking-wide` | Custom serif/mono font pairing, heading scale, readable body copy |
+| **Color Utilities** | Custom palette: `bg-ink`, `bg-parchment`, `text-burgundy`, `text-gold`, `text-forest` | Brand-specific "leather-bound library" color system defined via `tailwind.config` |
+| **Spacing** | `px-4`, `py-14`, `gap-6`, `space-y-5`, `mb-8` | Section and element padding/margins throughout |
+| **Shadows** | `shadow-md`, `shadow-lg`, `hover:shadow-xl` | Card elevation and depth on hover |
+| **Rounded Corners** | `rounded-lg`, `rounded-full`, `rounded-md` | Cards, avatars, buttons, badges |
+| **Hover Effects** | `hover:text-gold`, `hover:border-burgundy`, `hover:bg-burgundy/90` | Interactive feedback on links, buttons, and cards |
+| **Transitions** | `transition`, `transition-colors`, `transition-all duration-200` | Smooth state changes on hover/focus |
+| **Badges** | Cart count badge, discount badge, in-stock indicator | Small status/notification markers |
+
+### File Location
+
+- `TailwindDay4Task/index.html` — E-Commerce Product Page single-file implementation[cite: 1].
+
+---
+
 ## How to Run the Project
 
 ### Option 1: Direct Open in Browser
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/ABman-FireBird/TechTide-Internship-Task.git](https://github.com/ABman-FireBird/TechTide-Internship-Task.git)
-   Navigate to the desired task folder (e.g., cd TailwindDay3Task)[cite: 1].
+   git clone https://github.com/ABman-FireBird/TechTide-Internship-Task.git
+   ```
+2. Navigate to the desired task folder (e.g., `cd TailwindDay4Task`)[cite: 1].
+3. Open `index.html` directly in any web browser[cite: 1].
 
-Open index.html directly in any web browser[cite: 1].
+### Option 2: Live Server (VS Code)
+1. Install the "Live Server" extension in VS Code[cite: 1].
+2. Right-click on `index.html` and select **Open with Live Server**[cite: 1].
 
-Option 2: Live Server (VS Code)
-Install the "Live Server" extension in VS Code[cite: 1].
+## Author
 
-Right-click on index.html and select Open with Live Server[cite: 1].
-
-Author
-Abdullah Farooq
-
-[cite: 1]
-
+**Abdullah Farooq**
 TechTide Summer Intern 2026[cite: 1]
+[LinkedIn](#) | [GitHub](#)
 
-LinkedIn
+## License
 
-[cite: 1]
-
-GitHub
-
-[cite: 1]
-
-License
 This project is created for educational purposes as part of the TechTide Summer Internship 2026[cite: 1].

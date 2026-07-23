@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bindery — Product Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#1C1B1A",
+            parchment: "#EDEAE3",
+            burgundy: "#7A1F2B",
+            forest: "#2F4432",
+            gold: "#B8963E",
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['"Inter"', 'sans-serif'],
+            mono: ['"IBM Plex Mono"', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-parchment text-ink font-body">
+
+  <nav class="bg-ink text-parchment sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 gap-4">
+
+        <a href="#" class="font-display text-2xl font-bold tracking-wide text-gold shrink-0">
+          The Bindery
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 font-medium text-sm">
+          <a href="#" class="hover:text-gold transition-colors duration-200">Fiction</a>
+          <a href="#" class="hover:text-gold transition-colors duration-200">Non-Fiction</a>
+          <a href="#" class="hover:text-gold transition-colors duration-200">History</a>
+          <a href="#" class="hover:text-gold transition-colors duration-200">Classics</a>
+        </div>
+
+        <div class="hidden sm:flex flex-1 max-w-xs">
+          <input
+            type="text"
+            placeholder="Search books..."
+            class="w-full bg-parchment/10 border border-parchment/20 rounded-full px-4 py-1.5 text-sm text-parchment placeholder-parchment/50 focus:outline-none focus:ring-2 focus:ring-gold transition"
+          >
+        </div>
+
+        <div class="flex items-center gap-5 shrink-0">
+
+          <a href="#" class="relative hover:text-gold transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span class="absolute -top-2 -right-2 bg-burgundy text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">3</span>
+          </a>
+
+          <a href="#" class="hover:text-gold transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+    <div>
+      <img src="images/book-cover.jpg" alt="The Silent Archive cover" class="w-full rounded-lg shadow-lg mb-4">
+      <div class="grid grid-cols-4 gap-3">
+        <img src="images/related1.jpg" class="rounded-md border-2 border-gold cursor-pointer">
+        <img src="images/related2.jpg" class="rounded-md border border-ink/10 cursor-pointer hover:border-gold transition">
+        <img src="images/related3.jpg" class="rounded-md border border-ink/10 cursor-pointer hover:border-gold transition">
+        <img src="images/related4.jpg" class="rounded-md border border-ink/10 cursor-pointer hover:border-gold transition">
+      </div>
+    </div>
+
+    <div>
+      <p class="font-mono text-sm text-forest mb-2">Bindery Press</p>
+      <h1 class="font-display text-4xl font-bold mb-2">The Silent Archive</h1>
+      <p class="text-ink/60 mb-4">by Maren Kolt · Historical Fiction</p>
+
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-gold">★★★★☆</span>
+        <span class="text-sm text-ink/60">(214 reviews)</span>
+      </div>
+
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-3xl font-bold font-display text-burgundy">$18.99</span>
+        <span class="text-ink/40 line-through">$24.99</span>
+        <span class="border-2 border-gold text-gold text-xs font-bold px-2 py-1 rounded">24% OFF</span>
+      </div>
+
+      <p class="text-ink/80 leading-relaxed mb-8">
+        A sweeping historical novel following a librarian who uncovers a decades-old conspiracy hidden inside the archive she's sworn to protect.
+      </p>
+
+      <div class="space-y-5 mb-8">
+        <div>
+          <p class="text-sm font-semibold mb-2">Format</p>
+          <div class="flex gap-3">
+            <button class="px-4 py-2 border-2 border-burgundy bg-burgundy text-white rounded-md text-sm">Hardcover</button>
+            <button class="px-4 py-2 border-2 border-ink/20 rounded-md text-sm hover:border-burgundy transition">Paperback</button>
+            <button class="px-4 py-2 border-2 border-ink/20 rounded-md text-sm hover:border-burgundy transition">eBook</button>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <p class="text-sm font-semibold">Quantity</p>
+          <div class="flex items-center border border-ink/20 rounded-md">
+            <button class="px-3 py-1 hover:bg-ink/5">−</button>
+            <span class="px-4">1</span>
+            <button class="px-3 py-1 hover:bg-ink/5">+</button>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6 text-sm">
+          <span class="text-forest font-semibold">● In Stock</span>
+          <span class="font-mono text-ink/50">ISBN: 978-1-234567-89-0</span>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-4">
+        <button class="bg-burgundy text-white px-8 py-3 rounded-md font-semibold shadow-md hover:bg-burgundy/90 hover:shadow-lg transition-all duration-200">
+          Add to Cart
+        </button>
+        <button class="bg-gold text-ink px-8 py-3 rounded-md font-semibold shadow-md hover:bg-gold/90 hover:shadow-lg transition-all duration-200">
+          Buy Now
+        </button>
+        <button class="border-2 border-ink/20 px-6 py-3 rounded-md font-semibold hover:border-burgundy hover:text-burgundy transition-all duration-200">
+          ♡ Wishlist
+        </button>
+      </div>
+    </div>
+  </section>
+
+    <section class="bg-ink text-parchment py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+      <div class="flex flex-col items-center gap-2">
+        <span class="text-2xl">🚚</span><p class="text-sm">Fast Delivery</p>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <span class="text-2xl">🛡️</span><p class="text-sm">Warranty</p>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <span class="text-2xl">🔒</span><p class="text-sm">Secure Payment</p>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <span class="text-2xl">↩️</span><p class="text-sm">Easy Returns</p>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <span class="text-2xl">📖</span><p class="text-sm">Premium Quality</p>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <span class="text-2xl">💬</span><p class="text-sm">24/7 Support</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <h2 class="font-display text-3xl font-bold mb-8">Reader Reviews</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="images/review1.jpeg" class="w-12 h-12 rounded-full object-cover flex-shrink-0">
+          <div>
+            <p class="font-semibold text-sm">Abdullah Farooq</p>
+            <span class="text-gold text-sm">★★★★★</span>
+          </div>
+        </div>
+        <p class="text-sm text-ink/70">Couldn't put it down. The atmosphere alone is worth the read.</p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="images/review2.jpg" class="w-12 h-12 rounded-full object-cover flex-shrink-0">
+          <div>
+            <p class="font-semibold text-sm">Muhammad Abdullah</p>
+            <span class="text-gold text-sm">★★★★☆</span>
+          </div>
+        </div>
+        <p class="text-sm text-ink/70">Slow start but the last third pays off completely.</p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="images/review3.jpg" class="w-12 h-12 rounded-full object-cover flex-shrink-0">
+          <div>
+            <p class="font-semibold text-sm">Hamza Khaliq</p>
+            <span class="text-gold text-sm">★★★★★</span>
+          </div>
+        </div>
+        <p class="text-sm text-ink/70">Beautiful hardcover edition, feels great on the shelf.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-parchment py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-3xl font-bold mb-8">You Might Also Like</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="images/thumb1.jpg" class="w-full">
+          <div class="p-4">
+            <p class="font-semibold text-sm mb-1">A Quiet Republic</p>
+            <p class="text-burgundy font-bold mb-3">$15.99</p>
+            <button class="w-full border border-burgundy text-burgundy text-sm py-1.5 rounded hover:bg-burgundy hover:text-white transition">View Details</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="images/thumb2.jpg" class="w-full">
+          <div class="p-4">
+            <p class="font-semibold text-sm mb-1">Empire of Dust</p>
+            <p class="text-burgundy font-bold mb-3">$21.50</p>
+            <button class="w-full border border-burgundy text-burgundy text-sm py-1.5 rounded hover:bg-burgundy hover:text-white transition">View Details</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="images/thumb3.jpg" class="w-full">
+          <div class="p-4">
+            <p class="font-semibold text-sm mb-1">Letters to No One</p>
+            <p class="text-burgundy font-bold mb-3">$12.00</p>
+            <button class="w-full border border-burgundy text-burgundy text-sm py-1.5 rounded hover:bg-burgundy hover:text-white transition">View Details</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+          <img src="images/thumb4.jpg" class="w-full">
+          <div class="p-4">
+            <p class="font-semibold text-sm mb-1">The Last Cartographer</p>
+            <p class="text-burgundy font-bold mb-3">$19.25</p>
+            <button class="w-full border border-burgundy text-burgundy text-sm py-1.5 rounded hover:bg-burgundy hover:text-white transition">View Details</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-ink text-parchment py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+      <div>
+        <p class="font-display text-xl font-bold text-gold mb-3">The Bindery</p>
+        <p class="text-sm text-parchment/60">Independent bookstore for fiction, history, politics, and the classics.</p>
+      </div>
+
+      <div>
+        <p class="font-semibold mb-3">Customer Support</p>
+        <ul class="space-y-2 text-sm text-parchment/70">
+          <li><a href="#" class="hover:text-gold transition">Contact Us</a></li>
+          <li><a href="#" class="hover:text-gold transition">Shipping Info</a></li>
+          <li><a href="#" class="hover:text-gold transition">Returns</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold mb-3">Quick Links</p>
+        <ul class="space-y-2 text-sm text-parchment/70">
+          <li><a href="#" class="hover:text-gold transition">About</a></li>
+          <li><a href="#" class="hover:text-gold transition">Careers</a></li>
+          <li><a href="#" class="hover:text-gold transition">Blog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold mb-3">Follow Us</p>
+        <div class="flex gap-4 text-parchment/70">
+          <a href="#" class="hover:text-gold transition">FB</a>
+          <a href="#" class="hover:text-gold transition">IG</a>
+          <a href="#" class="hover:text-gold transition">TW</a>
+        </div>
+      </div>
+
+    </div>
+    <p class="text-center text-xs text-parchment/40 mt-10">© 2026 The Bindery. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
