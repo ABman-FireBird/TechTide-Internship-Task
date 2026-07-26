@@ -201,37 +201,8 @@ Design and develop a modern, responsive **E-Commerce Product Page** using **Tail
 
 ---
 
-## How to Run the Project
 
-### Option 1: Direct Open in Browser
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ABman-FireBird/TechTide-Internship-Task.git
-   ```
-2. Navigate to the desired task folder (e.g., `cd TailwindDay4Task`)[cite: 1].
-3. Open `index.html` directly in any web browser[cite: 1].
-
-### Option 2: Live Server (VS Code)
-1. Install the "Live Server" extension in VS Code[cite: 1].
-2. Right-click on `index.html` and select **Open with Live Server**[cite: 1].
-
-## Author
-
-**Abdullah Farooq**
-TechTide Summer Intern 2026[cite: 1]
-[LinkedIn](#) | [GitHub](#)
-
-## License
-
-This project is created for educational purposes as part of the TechTide Summer Internship 2026[cite: 1].
-
----
-
-# Week 3 Final Assignment — SaaS Landing Page (Harbor)
-
- — SaaS Landing Page ("Harbor")
-
-**Student Name:** Abdullah Farooq
+## Week 3 Final Assignment — SaaS Landing Page ("Harbor")
 
 ## Objective
 
@@ -283,28 +254,3 @@ Design and develop a modern, fully responsive **SaaS Landing Page** using **Tail
 
 - `index.html` — SaaS Landing Page single-file implementation.
 
-## How to Run the Project
-
-### Option 1: Direct Open in Browser
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ABman-FireBird/TechTide-Internship-Task.git
-   ```
-2. Navigate to this task's folder, e.g. `cd Week3-FinalAssignment`.
-3. Open `index.html` directly in any web browser.
-
-### Option 2: Live Server (VS Code)
-1. Install the "Live Server" extension in VS Code.
-2. Right-click on `index.html` and select **Open with Live Server**.
-
-No build step is required — the page uses the Tailwind CSS Play CDN.
-
-## Author
-
-**Abdullah Farooq**
-TechTide Summer Intern 2026
-[LinkedIn](#) | [GitHub](#)
-
-## License
-
-This project is created for educational purposes as part of the TechTide Summer Internship 2026.
