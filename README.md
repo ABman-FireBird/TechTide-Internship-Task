@@ -224,3 +224,87 @@ TechTide Summer Intern 2026[cite: 1]
 ## License
 
 This project is created for educational purposes as part of the TechTide Summer Internship 2026[cite: 1].
+
+---
+
+# Week 3 Final Assignment — SaaS Landing Page (Harbor)
+
+ — SaaS Landing Page ("Harbor")
+
+**Student Name:** Abdullah Farooq
+
+## Objective
+
+Design and develop a modern, fully responsive **SaaS Landing Page** using **Tailwind CSS**, demonstrating everything covered across the Tailwind CSS module — responsive layouts, reusable UI components, typography, spacing, Flexbox, Grid, and professional design principles. Theme chosen: **AI SaaS Platform** — "Harbor," a fictional AI copilot that reads, routes, and drafts replies to customer-support conversations.
+
+## Features Implemented
+
+- ✅ **Responsive Navigation Bar:** Logo, nav links, Login button, Get Started button, and a fully mobile-friendly menu built with the checkbox/`peer` technique — no JavaScript required.
+- ✅ **Hero Section:** Main heading, short description, two call-to-action buttons, a signature "beacon" hero illustration, and company statistics (Teams onboard, Conversations routed/mo, Average rating).
+- ✅ **Features Section:** Six feature cards, each with an icon, title, and description (Smart Routing, Auto-Draft Replies, Sentiment Radar, Knowledge Sync, Clean Hand-off, Live Analytics).
+- ✅ **Why Choose Us:** Three reasons to choose Harbor, each with its own icon, in a clean three-column layout.
+- ✅ **Pricing Section:** Three pricing cards (Basic, Pro, Enterprise), each with a price, feature list, and CTA button, with the **Pro** plan highlighted as the recommended tier.
+- ✅ **Testimonials:** Three customer testimonials, each with an avatar, name, position, and review.
+- ✅ **FAQ:** Five frequently-asked questions built with native `<details>`/`<summary>` elements — static UI, no JavaScript.
+- ✅ **Contact Section:** UI-only contact form, plus company address, email, and phone number.
+- ✅ **Footer:** Company information, quick links, resources, social icons, and copyright line.
+
+## Tailwind Concepts Used
+
+| Category | Tailwind Classes Used | Purpose |
+|----------|----------------------|---------|
+| **Responsive Breakpoints** | `sm:`, `lg:` prefixes (e.g. `hidden lg:flex`) | Mobile → tablet → desktop layout shifts |
+| **Flexbox** | `flex`, `items-center`, `justify-between`, `flex-col` | Nav, buttons, card content alignment |
+| **Grid** | `grid`, `sm:grid-cols-2`, `lg:grid-cols-3`, `md:grid-cols-3` | Features, pricing, testimonials, footer layouts |
+| **Typography** | `font-display`, `font-mono`, `text-5xl`, `tracking-widest`, `leading-relaxed` | Custom serif/mono font pairing, heading scale, readable copy |
+| **Color Utilities** | Custom palette: `bg-navy`, `bg-paper`, `text-beacon`, `text-teal` | Brand "harbor beacon" color system defined via `tailwind.config` |
+| **Spacing** | `px-6`, `py-24`, `gap-6`, `space-y-5`, `mt-14` | Section and element padding/margins throughout |
+| **Rounded Corners** | `rounded-2xl`, `rounded-full`, `rounded-xl` | Cards, buttons, avatars, badges |
+| **Shadows** | `shadow-md`, `shadow-lg`, `hover:shadow-xl` | Card elevation and depth on hover |
+| **Hover Effects** | `hover:bg-beacon`, `hover:text-beacon`, `hover:border-beacon/40` | Interactive feedback on links, buttons, cards |
+| **Transitions** | `transition-colors`, `transition-transform`, `duration-200/300` | Smooth state changes on hover and FAQ open/close |
+| **Gradients** | `bg-gradient-to-r`, `bg-gradient-to-br` (`from-beacon to-teal`, `from-navy to-deep`) | Primary buttons and the recommended Pro pricing card |
+| **Icons** | Plain emoji characters (no SVG/icon library) | Feature, pricing, contact, and footer icons |
+
+## Bonus Challenges Completed
+
+- ✅ Responsive mobile navigation menu (CSS-only, no JavaScript)
+- ✅ Subtle animations using Tailwind's `transition` and `transform` utilities (hover lifts on cards/buttons, rotate on FAQ open)
+
+## Design Decisions
+
+- **Palette:** a deep navy/teal base (`#0B1E2D`, `#123244`) paired with a warm signal-orange accent (`#FF7A45`) and a muted teal (`#3FA79A`) — evoking a lighthouse/harbor beacon guiding conversations home, rather than a generic SaaS blue-and-purple gradient.
+- **Type:** Fraunces (serif) for display headings, Inter for body/UI copy, and IBM Plex Mono for small labels, eyebrows, and stats.
+- **Signature element:** the hero's concentric rings and ticket chips converging on a checkmark literalize the product's promise — every conversation is read, routed, and resolved.
+- **Icons:** implemented as plain emoji rather than an SVG icon set or icon font, keeping the page dependency-free and easy to read line-by-line.
+- **Mobile navigation:** a hidden checkbox with Tailwind's `peer` modifier opens and closes the menu with zero JavaScript.
+
+## File Location
+
+- `index.html` — SaaS Landing Page single-file implementation.
+
+## How to Run the Project
+
+### Option 1: Direct Open in Browser
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ABman-FireBird/TechTide-Internship-Task.git
+   ```
+2. Navigate to this task's folder, e.g. `cd Week3-FinalAssignment`.
+3. Open `index.html` directly in any web browser.
+
+### Option 2: Live Server (VS Code)
+1. Install the "Live Server" extension in VS Code.
+2. Right-click on `index.html` and select **Open with Live Server**.
+
+No build step is required — the page uses the Tailwind CSS Play CDN.
+
+## Author
+
+**Abdullah Farooq**
+TechTide Summer Intern 2026
+[LinkedIn](#) | [GitHub](#)
+
+## License
+
+This project is created for educational purposes as part of the TechTide Summer Internship 2026.

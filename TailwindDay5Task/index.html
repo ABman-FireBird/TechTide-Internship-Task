@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Harbor — AI that routes every conversation home</title>
+<meta name="description" content="Harbor is the AI copilot that reads, routes, and drafts replies to every support conversation before your team even opens the ticket." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy:   '#0B1E2D',
+          deep:   '#123244',
+          slate:  '#1B3A4B',
+          paper:  '#F6F3EA',
+          ink:    '#15222B',
+          beacon: '#FF7A45',
+          teal:   '#3FA79A',
+        },
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          body: ['Inter', 'sans-serif'],
+          mono: ['IBM Plex Mono', 'monospace'],
+        },
+      },
+    },
+  }
+</script>
+</head>
+
+<body class="bg-paper text-ink font-body antialiased">
+
+<header class="bg-paper border-b border-ink/10">
+  <nav class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+
+      <a href="#" class="flex items-center gap-2.5">
+        <span class="flex h-8 w-8 items-center justify-center rounded-full bg-navy text-base">
+          🧭
+        </span>
+        <span class="font-display text-2xl font-semibold tracking-tight text-navy">Harbor</span>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-10 font-medium text-[15px] text-ink/70">
+        <a href="#features" class="hover:text-beacon transition-colors duration-200">Features</a>
+        <a href="#why" class="hover:text-beacon transition-colors duration-200">Why Harbor</a>
+        <a href="#pricing" class="hover:text-beacon transition-colors duration-200">Pricing</a>
+        <a href="#testimonials" class="hover:text-beacon transition-colors duration-200">Customers</a>
+        <a href="#faq" class="hover:text-beacon transition-colors duration-200">FAQ</a>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="#" class="text-[15px] font-medium text-ink/80 hover:text-navy transition-colors duration-200">Log in</a>
+        <a href="#" class="inline-flex items-center rounded-full bg-gradient-to-r from-navy to-deep px-5 py-2.5 text-[15px] font-medium text-paper shadow-sm hover:shadow-md transition-all duration-200">
+          Get started
+        </a>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="hidden peer" />
+      <label for="nav-toggle" class="lg:hidden cursor-pointer p-2 -mr-2 z-50 text-2xl leading-none text-navy">
+        ☰
+      </label>
+
+      <!-- Mobile menu panel -->
+      <div class="hidden peer-checked:flex lg:hidden fixed inset-x-0 top-20 bottom-0 bg-paper flex-col px-6 pt-8 gap-6 overflow-y-auto">
+        <a href="#features" class="text-lg font-medium text-ink border-b border-ink/10 pb-4">Features</a>
+        <a href="#why" class="text-lg font-medium text-ink border-b border-ink/10 pb-4">Why Harbor</a>
+        <a href="#pricing" class="text-lg font-medium text-ink border-b border-ink/10 pb-4">Pricing</a>
+        <a href="#testimonials" class="text-lg font-medium text-ink border-b border-ink/10 pb-4">Customers</a>
+        <a href="#faq" class="text-lg font-medium text-ink border-b border-ink/10 pb-4">FAQ</a>
+        <div class="flex flex-col gap-3 pt-2">
+          <a href="#" class="text-center rounded-full border border-navy px-5 py-3 font-medium text-navy">Log in</a>
+          <a href="#" class="text-center rounded-full bg-gradient-to-r from-navy to-deep px-5 py-3 font-medium text-paper">Get started</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<section class="relative overflow-hidden bg-paper">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-20 lg:pt-24 lg:pb-28 grid lg:grid-cols-2 gap-16 items-center">
+
+    <div>
+      <span class="inline-flex items-center gap-2 rounded-full bg-navy/5 border border-navy/10 px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-navy/70">
+        Now routing 3.2M conversations / month
+      </span>
+      <h1 class="mt-6 font-display text-5xl sm:text-6xl lg:text-[64px] leading-[1.05] font-semibold text-navy">
+        Let AI chart the course through every support conversation.
+      </h1>
+      <p class="mt-6 text-lg leading-relaxed text-ink/70 max-w-lg">
+        Harbor reads incoming tickets, drafts the reply, and hands off the hard ones to the right person — so your team spends its day solving problems, not sorting them.
+      </p>
+
+      <div class="mt-9 flex flex-col sm:flex-row gap-4">
+        <a href="#" class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-beacon to-teal px-7 py-3.5 font-medium text-white shadow-lg shadow-beacon/25 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200">
+          Start free trial
+        </a>
+        <a href="#" class="inline-flex items-center justify-center gap-2 rounded-full border border-navy/20 px-7 py-3.5 font-medium text-navy hover:bg-navy/5 transition-colors duration-200">
+          <span>▶️</span>
+          Watch 2-min demo
+        </a>
+      </div>
+
+      <div class="mt-14 grid grid-cols-3 gap-6 max-w-lg border-t border-ink/10 pt-8">
+        <div>
+          <p class="font-display text-3xl font-semibold text-navy">41,000+</p>
+          <p class="mt-1 font-mono text-xs uppercase tracking-wide text-ink/50">Teams onboard</p>
+        </div>
+        <div>
+          <p class="font-display text-3xl font-semibold text-navy">3.2M</p>
+          <p class="mt-1 font-mono text-xs uppercase tracking-wide text-ink/50">Convos routed / mo</p>
+        </div>
+        <div>
+          <p class="font-display text-3xl font-semibold text-navy">4.9<span class="text-lg">/5</span></p>
+          <p class="mt-1 font-mono text-xs uppercase tracking-wide text-ink/50">Avg. team rating</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex items-center justify-center h-[380px] lg:h-[440px]">
+      <div class="absolute h-72 w-72 lg:h-80 lg:w-80 rounded-full border border-navy/10"></div>
+      <div class="absolute h-52 w-52 lg:h-60 lg:w-60 rounded-full border border-beacon/30"></div>
+
+      <div class="relative flex h-28 w-28 items-center justify-center rounded-full bg-navy shadow-xl text-3xl hover:scale-105 transition-transform duration-300">
+        ✅
+      </div>
+
+      <div class="absolute top-6 left-2 lg:left-4 rounded-xl bg-white shadow-md px-4 py-2.5 text-xs font-mono text-ink/70 hover:-translate-y-1 transition-transform duration-300">
+        "Refund on order #4821" <span class="text-teal">→ resolved</span>
+      </div>
+      <div class="absolute bottom-10 right-0 lg:right-2 rounded-xl bg-white shadow-md px-4 py-2.5 text-xs font-mono text-ink/70 hover:-translate-y-1 transition-transform duration-300">
+        Billing question <span class="text-beacon">→ routed to Amaka</span>
+      </div>
+      <div class="absolute bottom-0 left-8 lg:left-10 rounded-xl bg-white shadow-md px-4 py-2.5 text-xs font-mono text-ink/70 hover:-translate-y-1 transition-transform duration-300">
+        Sentiment <span class="text-teal">calm</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="features" class="bg-white py-24 border-t border-ink/10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <p class="font-mono text-xs uppercase tracking-widest text-beacon">Features</p>
+      <h2 class="mt-3 font-display text-4xl sm:text-5xl font-semibold text-navy leading-tight">
+        Everything a support inbox needs, minus the busywork.
+      </h2>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="group rounded-2xl border border-ink/10 p-7 hover:border-beacon/40 hover:shadow-lg transition-all duration-300">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-navy/5 text-navy group-hover:bg-beacon group-hover:text-white transition-colors duration-300 text-lg">
+          🧭
+        </div>
+        <h3 class="mt-5 font-display text-xl font-semibold text-navy">Smart routing</h3>
+        <p class="mt-2 text-sm leading-relaxed text-ink/65">Every ticket lands with the teammate best equipped to answer it, based on topic, urgency, and past load.</p>
+      </div>
+
+      <div class="group rounded-2xl border border-ink/10 p-7 hover:border-beacon/40 hover:shadow-lg transition-all duration-300">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-navy/5 text-navy group-hover:bg-beacon group-hover:text-white transition-colors duration-300 text-lg">
+          ✍️
+        </div>
+        <h3 class="mt-5 font-display text-xl font-semibold text-navy">Auto-draft replies</h3>
+        <p class="mt-2 text-sm leading-relaxed text-ink/65">Harbor writes a first-pass reply in your team's voice, ready to send or edit in one click.</p>
+      </div>
+
+      <div class="group rounded-2xl border border-ink/10 p-7 hover:border-beacon/40 hover:shadow-lg transition-all duration-300">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-navy/5 text-navy group-hover:bg-beacon group-hover:text-white transition-colors duration-300 text-lg">
+          📡
+        </div>
+        <h3 class="mt-5 font-display text-xl font-semibold text-navy">Sentiment radar</h3>
+        <p class="mt-2 text-sm leading-relaxed text-ink/65">Flags frustration before it escalates, so a human can step in at exactly the right moment.</p>
+      </div>
+
+      <div class="group rounded-2xl border border-ink/10 p-7 hover:border-beacon/40 hover:shadow-lg transition-all duration-300">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-navy/5 text-navy group-hover:bg-beacon group-hover:text-white transition-colors duration-300 text-lg">
+          📚
+        </div>
+        <h3 class="mt-5 font-display text-xl font-semibold text-navy">Knowledge sync</h3>
+        <p class="mt-2 text-sm leading-relaxed text-ink/65">Pulls answers straight from your docs and past tickets, and stays current as they change.</p>
+      </div>
+
+      <div class="group rounded-2xl border border-ink/10 p-7 hover:border-beacon/40 hover:shadow-lg transition-all duration-300">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-navy/5 text-navy group-hover:bg-beacon group-hover:text-white transition-colors duration-300 text-lg">
+          🤝
+        </div>
+        <h3 class="mt-5 font-display text-xl font-semibold text-navy">Clean hand-off</h3>
+        <p class="mt-2 text-sm leading-relaxed text-ink/65">When a ticket needs a person, Harbor hands over full context — no re-reading the thread.</p>
+      </div>
+
+      <div class="group rounded-2xl border border-ink/10 p-7 hover:border-beacon/40 hover:shadow-lg transition-all duration-300">
+        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-navy/5 text-navy group-hover:bg-beacon group-hover:text-white transition-colors duration-300 text-lg">
+          📊
+        </div>
+        <h3 class="mt-5 font-display text-xl font-semibold text-navy">Live analytics</h3>
+        <p class="mt-2 text-sm leading-relaxed text-ink/65">See resolution time, volume, and satisfaction shift in real time, by team or by topic.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="why" class="bg-navy py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <p class="font-mono text-xs uppercase tracking-widest text-beacon">Why Harbor</p>
+      <h2 class="mt-3 font-display text-4xl sm:text-5xl font-semibold text-paper leading-tight">
+        Built for support teams, not for a generic inbox.
+      </h2>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-10">
+      <div class="flex flex-col gap-4">
+        <div class="flex h-12 w-12 items-center justify-center rounded-full border border-beacon/40 text-beacon text-lg">
+          ⚡
+        </div>
+        <h3 class="font-display text-xl font-semibold text-paper">Live in an afternoon</h3>
+        <p class="text-sm leading-relaxed text-paper/60">Connect your helpdesk and docs, and Harbor is drafting replies the same day — no migration project required.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="flex h-12 w-12 items-center justify-center rounded-full border border-beacon/40 text-beacon text-lg">
+          🛟
+        </div>
+        <h3 class="font-display text-xl font-semibold text-paper">A human is always in the loop</h3>
+        <p class="text-sm leading-relaxed text-paper/60">Harbor drafts and flags — your team approves the sends that matter and stays the final word, always.</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="flex h-12 w-12 items-center justify-center rounded-full border border-beacon/40 text-beacon text-lg">
+          🎯
+        </div>
+        <h3 class="font-display text-xl font-semibold text-paper">Built for support, specifically</h3>
+        <p class="text-sm leading-relaxed text-paper/60">No generic chatbot framework underneath — every model in Harbor is tuned on real support conversations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="bg-paper py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center">
+      <p class="font-mono text-xs uppercase tracking-widest text-beacon">Pricing</p>
+      <h2 class="mt-3 font-display text-4xl sm:text-5xl font-semibold text-navy leading-tight">
+        Plans that scale with your inbox.
+      </h2>
+      <p class="mt-4 text-ink/65">Every plan includes unlimited seats for humans. You only pay for what Harbor automates.</p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-8 items-start">
+
+      <div class="rounded-2xl border border-ink/10 bg-white p-8">
+        <h3 class="font-display text-lg font-semibold text-navy">Basic</h3>
+        <p class="mt-1 text-sm text-ink/60">For small teams getting started.</p>
+        <p class="mt-6 font-display text-4xl font-semibold text-navy">$29<span class="text-base font-body font-normal text-ink/50">/mo</span></p>
+        <a href="#" class="mt-6 block text-center rounded-full border border-navy/20 py-3 font-medium text-navy hover:bg-navy/5 transition-colors duration-200">Start free trial</a>
+        <ul class="mt-8 space-y-3 text-sm text-ink/70">
+          <li class="flex gap-2"><span class="text-teal">✓</span> Up to 500 conversations/mo</li>
+          <li class="flex gap-2"><span class="text-teal">✓</span> Smart routing</li>
+          <li class="flex gap-2"><span class="text-teal">✓</span> Auto-draft replies</li>
+          <li class="flex gap-2"><span class="text-teal">✓</span> Email support</li>
+        </ul>
+      </div>
+
+      <div class="relative rounded-2xl border-2 border-beacon bg-gradient-to-br from-navy to-deep p-8 shadow-xl lg:-translate-y-3">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-beacon px-4 py-1 font-mono text-xs uppercase tracking-wide text-white">Most popular</span>
+        <h3 class="font-display text-lg font-semibold text-paper">Pro</h3>
+        <p class="mt-1 text-sm text-paper/60">For growing support teams.</p>
+        <p class="mt-6 font-display text-4xl font-semibold text-paper">$79<span class="text-base font-body font-normal text-paper/50">/mo</span></p>
+        <a href="#" class="mt-6 block text-center rounded-full bg-gradient-to-r from-beacon to-teal py-3 font-medium text-white hover:shadow-lg transition-shadow duration-200">Start free trial</a>
+        <ul class="mt-8 space-y-3 text-sm text-paper/75">
+          <li class="flex gap-2"><span class="text-beacon">✓</span> Up to 5,000 conversations/mo</li>
+          <li class="flex gap-2"><span class="text-beacon">✓</span> Everything in Basic</li>
+          <li class="flex gap-2"><span class="text-beacon">✓</span> Sentiment radar</li>
+          <li class="flex gap-2"><span class="text-beacon">✓</span> Knowledge sync</li>
+          <li class="flex gap-2"><span class="text-beacon">✓</span> Priority support</li>
+        </ul>
+      </div>
+
+      <div class="rounded-2xl border border-ink/10 bg-white p-8">
+        <h3 class="font-display text-lg font-semibold text-navy">Enterprise</h3>
+        <p class="mt-1 text-sm text-ink/60">For high-volume, multi-team orgs.</p>
+        <p class="mt-6 font-display text-4xl font-semibold text-navy">Custom</p>
+        <a href="#" class="mt-6 block text-center rounded-full border border-navy/20 py-3 font-medium text-navy hover:bg-navy/5 transition-colors duration-200">Talk to sales</a>
+        <ul class="mt-8 space-y-3 text-sm text-ink/70">
+          <li class="flex gap-2"><span class="text-teal">✓</span> Unlimited conversations</li>
+          <li class="flex gap-2"><span class="text-teal">✓</span> Everything in Pro</li>
+          <li class="flex gap-2"><span class="text-teal">✓</span> Dedicated success manager</li>
+          <li class="flex gap-2"><span class="text-teal">✓</span> Custom data residency</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="bg-white py-24 border-t border-ink/10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <p class="font-mono text-xs uppercase tracking-widest text-beacon">Customers</p>
+      <h2 class="mt-3 font-display text-4xl sm:text-5xl font-semibold text-navy leading-tight">
+        Support teams that got their afternoons back.
+      </h2>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-8">
+
+      <div class="rounded-2xl bg-paper p-7">
+        <p class="text-sm leading-relaxed text-ink/75">"We cut first-response time from four hours to under six minutes. Harbor drafts, my team approves — it feels like we hired three people."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="flex h-11 w-11 items-center justify-center rounded-full bg-navy font-display text-sm font-semibold text-paper">AF</div>
+          <div>
+            <p class="text-sm font-semibold text-navy">Abdullah Farooq</p>
+            <p class="text-xs text-ink/55">Head of Support, Anthropic</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-paper p-7">
+        <p class="text-sm leading-relaxed text-ink/75">"The sentiment radar caught an angry renewal thread before it blew up. That single save paid for the year."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="flex h-11 w-11 items-center justify-center rounded-full bg-teal font-display text-sm font-semibold text-white">MA</div>
+          <div>
+            <p class="text-sm font-semibold text-navy">M Abdullah Altaf</p>
+            <p class="text-xs text-ink/55">CX Lead, Silicon Valley</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-paper p-7">
+        <p class="text-sm leading-relaxed text-ink/75">"Setup took one afternoon. Knowledge sync means our macros are finally consistent across the whole team."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="flex h-11 w-11 items-center justify-center rounded-full bg-beacon font-display text-sm font-semibold text-white">MH</div>
+          <div>
+            <p class="text-sm font-semibold text-navy">M Humza Rauf</p>
+            <p class="text-xs text-ink/55">Ops Manager, Riphah Institute</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="bg-paper py-24">
+  <div class="max-w-4xl mx-auto px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <p class="font-mono text-xs uppercase tracking-widest text-beacon">FAQ</p>
+      <h2 class="mt-3 font-display text-4xl sm:text-5xl font-semibold text-navy leading-tight">
+        Questions, answered.
+      </h2>
+    </div>
+
+    <div class="mt-12 divide-y divide-ink/10 border-t border-b border-ink/10">
+
+      <details class="group py-6">
+        <summary class="flex items-center justify-between cursor-pointer list-none font-medium text-navy">
+          How long does setup take?
+          <span class="text-xl text-ink/40 transition-transform duration-200 group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm leading-relaxed text-ink/65">Most teams connect their helpdesk and docs and are drafting replies within a few hours. There's no migration step — Harbor reads what you already have.</p>
+      </details>
+
+      <details class="group py-6">
+        <summary class="flex items-center justify-between cursor-pointer list-none font-medium text-navy">
+          Which helpdesks does Harbor work with?
+          <span class="text-xl text-ink/40 transition-transform duration-200 group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm leading-relaxed text-ink/65">Harbor connects to the most common helpdesk and messaging tools out of the box, and supports a general API for anything custom.</p>
+      </details>
+
+      <details class="group py-6">
+        <summary class="flex items-center justify-between cursor-pointer list-none font-medium text-navy">
+          Does Harbor ever send replies without a human?
+          <span class="text-xl text-ink/40 transition-transform duration-200 group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm leading-relaxed text-ink/65">Only for the routine, low-risk replies you choose to automate. Anything flagged as sensitive or uncertain always waits for a person to approve it.</p>
+      </details>
+
+      <details class="group py-6">
+        <summary class="flex items-center justify-between cursor-pointer list-none font-medium text-navy">
+          Can I switch plans later?
+          <span class="text-xl text-ink/40 transition-transform duration-200 group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm leading-relaxed text-ink/65">Yes. Upgrade, downgrade, or cancel at any time from your billing settings — changes apply from your next billing cycle.</p>
+      </details>
+
+      <details class="group py-6">
+        <summary class="flex items-center justify-between cursor-pointer list-none font-medium text-navy">
+          Is my customer data secure?
+          <span class="text-xl text-ink/40 transition-transform duration-200 group-open:rotate-45">+</span>
+        </summary>
+        <p class="mt-3 text-sm leading-relaxed text-ink/65">All data is encrypted in transit and at rest. Enterprise plans support custom data residency and retention policies.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="bg-navy py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16">
+
+    <div>
+      <p class="font-mono text-xs uppercase tracking-widest text-beacon">Contact</p>
+      <h2 class="mt-3 font-display text-4xl sm:text-5xl font-semibold text-paper leading-tight">
+        Talk to the team.
+      </h2>
+      <p class="mt-4 text-paper/60 max-w-md">Questions about setup, pricing, or a custom plan? Send us a note and we'll reply within one business day.</p>
+
+      <div class="mt-10 space-y-5 text-sm text-paper/75">
+        <div class="flex items-start gap-3">
+          <span class="text-lg mt-0.5">📍</span>
+          <span>148 Harbor Row, Suite 4C<br/>Askari 10, Pakistan</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-lg">✉️</span>
+          <span>hello@harbor-ai.example</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-lg">📞</span>
+          <span>+92 33 534 15222</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="bg-paper rounded-2xl p-8 space-y-5">
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-xs font-mono uppercase tracking-wide text-ink/50 mb-1.5">Name</label>
+          <input type="text" placeholder="Jordan Ellis" class="w-full rounded-lg border border-ink/15 px-4 py-2.5 text-sm text-ink placeholder:text-ink/35 focus:outline-none focus:ring-2 focus:ring-beacon/50" />
+        </div>
+        <div>
+          <label class="block text-xs font-mono uppercase tracking-wide text-ink/50 mb-1.5">Email</label>
+          <input type="email" placeholder="you@company.com" class="w-full rounded-lg border border-ink/15 px-4 py-2.5 text-sm text-ink placeholder:text-ink/35 focus:outline-none focus:ring-2 focus:ring-beacon/50" />
+        </div>
+      </div>
+      <div>
+        <label class="block text-xs font-mono uppercase tracking-wide text-ink/50 mb-1.5">Company</label>
+        <input type="text" placeholder="Company name" class="w-full rounded-lg border border-ink/15 px-4 py-2.5 text-sm text-ink placeholder:text-ink/35 focus:outline-none focus:ring-2 focus:ring-beacon/50" />
+      </div>
+      <div>
+        <label class="block text-xs font-mono uppercase tracking-wide text-ink/50 mb-1.5">Message</label>
+        <textarea rows="4" placeholder="Tell us about your team..." class="w-full rounded-lg border border-ink/15 px-4 py-2.5 text-sm text-ink placeholder:text-ink/35 focus:outline-none focus:ring-2 focus:ring-beacon/50"></textarea>
+      </div>
+      <button type="button" class="w-full rounded-full bg-gradient-to-r from-beacon to-teal py-3.5 font-medium text-white hover:shadow-lg transition-shadow duration-200">Send message</button>
+    </form>
+
+  </div>
+</section>
+
+<footer class="bg-deep pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+
+      <div class="col-span-2 lg:col-span-1">
+        <a href="#" class="flex items-center gap-2.5">
+          <span class="flex h-8 w-8 items-center justify-center rounded-full bg-navy text-base">
+            🧭
+          </span>
+          <span class="font-display text-2xl font-semibold text-paper">Harbor</span>
+        </a>
+        <p class="mt-4 text-sm leading-relaxed text-paper/50 max-w-xs">The AI copilot that reads, routes, and drafts replies to every support conversation.</p>
+      </div>
+
+      <div>
+        <h4 class="font-mono text-xs uppercase tracking-widest text-paper/40">Quick links</h4>
+        <ul class="mt-4 space-y-3 text-sm text-paper/65">
+          <li><a href="#features" class="hover:text-beacon transition-colors duration-200">Features</a></li>
+          <li><a href="#pricing" class="hover:text-beacon transition-colors duration-200">Pricing</a></li>
+          <li><a href="#testimonials" class="hover:text-beacon transition-colors duration-200">Customers</a></li>
+          <li><a href="#faq" class="hover:text-beacon transition-colors duration-200">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-mono text-xs uppercase tracking-widest text-paper/40">Resources</h4>
+        <ul class="mt-4 space-y-3 text-sm text-paper/65">
+          <li><a href="#" class="hover:text-beacon transition-colors duration-200">Documentation</a></li>
+          <li><a href="#" class="hover:text-beacon transition-colors duration-200">API reference</a></li>
+          <li><a href="#" class="hover:text-beacon transition-colors duration-200">Status</a></li>
+          <li><a href="#" class="hover:text-beacon transition-colors duration-200">Security</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-mono text-xs uppercase tracking-widest text-paper/40">Follow</h4>
+        <div class="mt-4 flex gap-3">
+          <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 text-paper/70 hover:bg-beacon hover:text-white transition-colors duration-200">
+            <span class="text-sm">🐦</span>
+          </a>
+          <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 text-paper/70 hover:bg-beacon hover:text-white transition-colors duration-200">
+            <span class="text-sm">💼</span>
+          </a>
+          <a href="#" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/5 text-paper/70 hover:bg-beacon hover:text-white transition-colors duration-200">
+            <span class="text-sm">📷</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-paper/40">
+      <p>© 2026 Harbor, Inc. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-beacon transition-colors duration-200">Privacy</a>
+        <a href="#" class="hover:text-beacon transition-colors duration-200">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
