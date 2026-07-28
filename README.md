@@ -25,6 +25,7 @@ e-commerce product pages.
 - HTML5 + External CSS3 (CSS Day 1 onward)
 - CSS Variables, Flexbox, and CSS Grid
 - **Tailwind CSS** (Week 3, via CDN)
+- **JavaScript (Vanilla, ES6)** (Week 4, via external `script.js`)
 - [Font Awesome](https://fontawesome.com/) (via CDN, for footer social icons)
 - Google Fonts (`Open Sans`, `Poppins`, `Playfair Display`, `Inter`, `IBM Plex Mono`)
 
@@ -252,6 +253,57 @@ Design and develop a modern, fully responsive **SaaS Landing Page** using **Tail
 ## File Location
 
 - `index.html` — SaaS Landing Page single-file implementation.
+
+## Week 4, Day 1 — JavaScript Fundamentals
+
+### Objective
+
+Understand the fundamentals of JavaScript and learn how to write, execute, and
+debug simple JavaScript programs, using an external `script.js` file linked to
+a bare `index.html` page.
+
+### JavaScript Concepts Learned
+
+- Introduction to JavaScript and how it works in the browser
+- Variables (`var`, `let`, `const`) and variable scoping
+- Data types (String, Number, Boolean)
+- Arithmetic and comparison operators
+- User input via `prompt()`
+- Output via `console.log()` and `alert()`
+- Comments for documenting code
+- Conditional logic (`if` / `else if` / `else`)
+- Basic coding practices: meaningful variable names, clean indentation, avoiding
+  variable name collisions across tasks
+
+### Tasks Completed
+
+- ✅ **Task 1 — Personal Information:** Declared variables for Full Name, Age,
+  University, Degree Program, Semester, and Favorite Programming Language,
+  displayed via `console.log()`.
+- ✅ **Task 2 — Simple Calculator:** Took two numbers via `prompt()` and
+  displayed Addition, Subtraction, Multiplication, Division, and Modulus.
+- ✅ **Task 3 — Student Grade Calculator:** Took marks for 5 subjects and
+  calculated Total Marks, Obtained Marks, and Percentage.
+- ✅ **Task 4 — Temperature Converter:** Converted Celsius → Fahrenheit and
+  Fahrenheit → Celsius.
+- ✅ **Task 5 — Age Calculator:** Took a Birth Year and calculated Current Age
+  using `Date().getFullYear()`.
+- ✅ **Task 6 — Even or Odd Checker:** Determined whether a user-entered number
+  is even or odd using the modulus operator.
+- ✅ **Task 7 — Positive, Negative, or Zero:** Determined the sign of a
+  user-entered number using conditional comparisons.
+- ✅ **Bonus Challenge — Student Information System:** Took student name and
+  marks via `prompt()`, calculated percentage, assigned a letter grade
+  (A+/B/C/D/F), and displayed a formatted summary via `console.log()`.
+
+### File Location
+
+- `script.js` — all seven tasks plus the bonus challenge, in a single external
+  JavaScript file linked from `index.html`.
+- `index.html` — minimal page that loads `script.js`; all output is written to
+  the browser console via `prompt()`/`console.log()`.
+
+---
 
 ## How to Run the Project
 
