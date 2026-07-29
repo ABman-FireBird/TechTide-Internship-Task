@@ -305,6 +305,55 @@ a bare `index.html` page.
 
 ---
 
+## Week 4, Day 2 — Conditional Statements
+
+### Objective
+
+Strengthen logical thinking by solving real-world problems using conditional
+statements in JavaScript — comparison operators, logical operators, `if`,
+`if...else`, `if...else if`, and nested conditions.
+
+### JavaScript Concepts Used
+
+- Comparison Operators (`>=`, `<=`, `===`, `!==`)
+- Logical Operators (`&&`, `||`)
+- `if` Statement
+- `if...else`
+- `if...else if`
+- Template literals for formatted output
+- No loops or functions (not yet covered)
+
+### Tasks Completed
+
+- ✅ **Task 1 — Voting Eligibility:** Took the user's age via `prompt()` and
+  displayed whether they are eligible or not eligible to vote.
+- ✅ **Task 2 — Even or Odd:** Took a number and used the modulus operator to
+  determine whether it is even or odd.
+- ✅ **Task 3 — Grade Calculator:** Took marks (0–100) and assigned a letter
+  grade (A/B/C/D/F) based on the given ranges.
+- ✅ **Task 4 — Largest Number:** Took three numbers and displayed the
+  largest of the three using chained comparisons.
+- ✅ **Task 5 — Leap Year Checker:** Took a year and correctly determined
+  whether it is a leap year, accounting for the century-year exception
+  (divisible by 4 and not by 100, unless also divisible by 400).
+- ✅ **Task 6 — Login Verification:** Compared user-entered username and
+  password against predefined credentials and displayed Login Successful or
+  Invalid Username or Password.
+- ✅ **Task 7 — Simple Calculator:** Took two numbers and an operator
+  (`+`, `-`, `*`, `/`) and displayed the corresponding result.
+- ✅ **Bonus Challenge — Student Result System:** Took marks for five
+  subjects, calculated the percentage, assigned a grade, and displayed a
+  Pass/Fail status alongside a final result summary.
+
+### File Location
+
+- `script.js` — all seven tasks plus the bonus challenge, in a single
+  external JavaScript file linked from `index.html`.
+- `index.html` — minimal page that loads `script.js`; all output is written
+  to the browser console via `prompt()`/`console.log()`.
+
+---
+
 ## How to Run the Project
 
 ### Option 1: Direct Open in Browser
