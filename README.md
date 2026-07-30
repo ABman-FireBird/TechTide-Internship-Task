@@ -354,6 +354,57 @@ statements in JavaScript — comparison operators, logical operators, `if`,
 
 ---
 
+## Week 4, Day 3 — Loops
+
+### Objective
+
+Understand how loops work and how they can be used to automate repetitive
+tasks efficiently, using `for`, `while`, and `do...while` loops, nested
+loops, and loop control statements in JavaScript.
+
+### JavaScript Concepts Used
+
+- `for` Loop
+- `while` Loop
+- `do...while` Loop
+- Nested Loops
+- Loop control statements (`break`, `continue`)
+- Template literals for formatted output
+- No arrays or functions (not yet covered)
+
+### Tasks Completed
+
+- ✅ **Task 1 — Number Counter:** Displayed numbers from 1 to 100 using both
+  a `for` loop and a `while` loop.
+- ✅ **Task 2 — Even & Odd Numbers:** Displayed all even numbers and all odd
+  numbers from 1 to 100 using the modulus operator.
+- ✅ **Task 3 — Multiplication Table:** Took a number via `prompt()` and
+  displayed its multiplication table from 1 to 10.
+- ✅ **Task 4 — Sum of Numbers:** Calculated and displayed the sum of numbers
+  from 1 to 100 using a `for` loop.
+- ✅ **Task 5 — Reverse Counting:** Displayed numbers from 100 down to 1
+  using a decrementing `for` loop.
+- ✅ **Task 6 — Factorial Calculator:** Took a positive number via `prompt()`
+  and calculated its factorial using a `for` loop.
+- ✅ **Task 7 — Number Guessing Game:** Generated a random number between 1
+  and 10 and compared it against a single user guess, displaying Correct
+  Guess 🎉 or Wrong Guess. Try Again!
+- ✅ **Task 8 — Star Pattern:** Printed an increasing star pattern (1 to 5
+  stars per row) using nested `for` loops.
+- ✅ **Bonus Challenge — Mini ATM Menu:** Built a repeating menu using a
+  `while (true)` loop with options to Check Balance, Deposit Money, Withdraw
+  Money, and Exit, updating the balance in real time and validating menu
+  input.
+
+### File Location
+
+- `script.js` — all eight tasks plus the bonus challenge, in a single
+  external JavaScript file linked from `index.html`.
+- `index.html` — minimal page that loads `script.js`; all output is written
+  to the browser console via `prompt()`/`console.log()`.
+
+---
+
 ## How to Run the Project
 
 ### Option 1: Direct Open in Browser
