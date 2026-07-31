@@ -405,6 +405,59 @@ loops, and loop control statements in JavaScript.
 
 ---
 
+## Week 4, Day 4 — JavaScript Functions
+
+### Objective
+
+Understand how functions work in JavaScript and how they help write reusable,
+organized, and maintainable code, using function declarations, parameters,
+arguments, return statements, arrow functions, and function expressions.
+
+### JavaScript Concepts Used
+
+- What Are Functions?
+- Function Declaration
+- Function Parameters
+- Function Arguments
+- Return Statement
+- Arrow Functions
+- Function Expressions
+- No arrays or objects (not yet covered)
+
+### Tasks Completed
+
+- ✅ **Task 1 — Greeting Function:** An arrow function that accepts a name
+  and returns a personalized welcome message.
+- ✅ **Task 2 — Calculator Functions:** Four separate arrow functions for
+  Addition, Subtraction, Multiplication, and Division, each accepting two
+  numbers and returning the result (with division-by-zero handling).
+- ✅ **Task 3 — Even or Odd Checker:** An arrow function that accepts a
+  number and returns whether it is even or odd using the modulus operator.
+- ✅ **Task 4 — Grade Calculator:** An arrow function that accepts marks and
+  returns a letter grade (A/B/C/D/F) based on the given ranges.
+- ✅ **Task 5 — Largest Number:** An arrow function that accepts three
+  numbers and returns the largest of the three using chained comparisons.
+- ✅ **Task 6 — Factorial Function:** An arrow function that calculates and
+  returns the factorial of a given number using a `for` loop.
+- ✅ **Task 7 — Temperature Converter:** Two arrow functions — Celsius →
+  Fahrenheit and Fahrenheit → Celsius — each returning the converted value.
+- ✅ **Task 8 — Simple Student Result System:** Separate arrow functions to
+  calculate total marks, percentage, and letter grade, combined in a
+  `display()` function that returns a formatted summary including Student
+  Name, Total Marks, Percentage, Grade, and Pass/Fail Status.
+- ✅ **Bonus Challenge — Simple Banking System:** Arrow functions for
+  Deposit, Withdraw, and Check Balance, each returning the updated balance
+  after every operation.
+
+### File Location
+
+- `script.js` — all eight tasks plus the bonus challenge, in a single
+  external JavaScript file linked from `index.html`.
+- `index.html` — minimal page that loads `script.js`; all output is written
+  to the browser console via `console.log()`.
+
+---
+
 ## How to Run the Project
 
 ### Option 1: Direct Open in Browser
