@@ -458,6 +458,63 @@ arguments, return statements, arrow functions, and function expressions.
 
 ---
 
+## Week 4, Day 5 — Arrays
+
+### Objective
+
+Understand how arrays work in JavaScript and how to efficiently store,
+access, modify, and manipulate collections of data.
+
+### JavaScript Concepts Used
+
+- Introduction to Arrays
+- Creating Arrays
+- Accessing Elements (indexing)
+- Updating Elements
+- Array Properties (`length`)
+- Array Methods (`push`, `pop`, `indexOf`, `splice`)
+- Iterating Through Arrays with `for` loops
+- Arrow functions for reusable array operations
+
+### Tasks Completed
+
+- ✅ **Task 1 — Student Names:** Created an array of 10 student names and
+  displayed the first student, the last student, and the total number of
+  students.
+- ✅ **Task 2 — Favorite Technologies:** Created an array of favorite
+  programming technologies, added a new technology with `push`, removed the
+  last one with `pop`, and displayed the updated array.
+- ✅ **Task 3 — Marks Management:** Created an array of marks for 5 subjects
+  and calculated the Total, Average, Highest, and Lowest marks using a
+  single `for` loop.
+- ✅ **Task 4 — Product List:** Created an array of 8 products and displayed
+  each one using a `for` loop.
+- ✅ **Task 5 — Reverse Array:** Created an array of numbers from 1 to 10 and
+  displayed it in reverse order using a decrementing `for` loop.
+- ✅ **Task 6 — Search in Array:** Took a city name via `prompt()` and used a
+  loop with a `found` flag to correctly report whether the city exists in
+  the array, without printing a false "not found" message on every
+  non-matching entry.
+- ✅ **Task 7 — Student Result System:** Used two parallel arrays (names and
+  marks) and a `for` loop with `if...else if` to display each student's
+  Name, Marks, and Grade.
+- ✅ **Task 8 — Mini Shopping Cart:** Built a shopping cart array supporting
+  Add Item (`push`), Remove Item (`pop`), Display All Items, and Display
+  Total Item Count.
+- ✅ **Bonus Challenge — Student Management System:** Built a simple system
+  using arrays and arrow functions — `addStudent`, `removeStudent` (via
+  `indexOf` + `splice`), `searchStudent` (via a `found` flag, avoiding
+  repeated "not found" messages), and `displayStudents`.
+
+### File Location
+
+- `script.js` — all eight tasks plus the bonus challenge, in a single
+  external JavaScript file linked from `index.html`.
+- `index.html` — minimal page that loads `script.js`; all output is written
+  to the browser console via `prompt()`/`console.log()`.
+
+---
+
 ## How to Run the Project
 
 ### Option 1: Direct Open in Browser
