@@ -515,6 +515,65 @@ access, modify, and manipulate collections of data.
 
 ---
 
+## Week 5, Day 1 — JavaScript Objects & Mini Student Management System
+
+### Objective
+
+Understand how objects work in JavaScript and how they can be used to
+represent real-world entities — creating, accessing, updating, and
+organizing data using objects and arrays of objects.
+
+### JavaScript Concepts Used
+
+- Introduction to Objects
+- Object Properties
+- Object Methods
+- Accessing Properties (dot notation)
+- Updating Properties
+- Nested Objects
+- Arrays of Objects
+- Arrow functions operating on arrays of objects
+
+### Tasks Completed
+
+- ✅ **Task 1 — Student Object:** Created an object storing Name, Roll
+  Number, Semester, Department, and CGPA, and displayed all properties in
+  the console.
+- ✅ **Task 2 — Employee Object:** Created an employee object and performed
+  Update Salary, Update Department, Add Email, and Delete Age operations,
+  then displayed the updated object.
+- ✅ **Task 3 — Product Inventory:** Created an array of 5 product objects
+  (Name, Price, Category, Stock) and displayed each product using a `for`
+  loop.
+- ✅ **Task 4 — Library Management:** Created an array of 5 book objects
+  (Title, Author, Year, Available) and displayed only the currently
+  available books using a conditional check inside the loop.
+- ✅ **Task 5 — Student Management System:** Created an array of 5 student
+  objects (Name, Roll Number, Marks, Grade) and displayed all records in a
+  formatted manner.
+- ✅ **Task 6 — Company Directory:** Created an array of employee objects
+  and displayed each employee's Name, Designation, Department, and Email.
+- ✅ **Mini Project — Student Record System:** Built a system using an
+  array of student objects with `display()`, `searchStudent(name)` (exact
+  match search with early return), `displayTopper()` (tracks the highest
+  scorer via comparison), and `averageMarks()` (calculates the class
+  average).
+- ✅ **Bonus Challenge — Enhanced Student Record System:** Extended the
+  Mini Project with `addStudent(name, marks, grade)` (adds a new record via
+  `push`), `removeStudent(name)` (removes a record via `splice`),
+  `updateStudent(name, marks, grade)` (updates marks and grade for a
+  matched student), and `sortStudentsByMarks()` (sorts all records from
+  highest to lowest marks using a comparator function).
+
+### File Location
+
+- `script.js` — all six tasks, the Mini Project, and the Bonus Challenge,
+  in a single external JavaScript file linked from `index.html`.
+- `index.html` — minimal page that loads `script.js`; all output is
+  written to the browser console via `console.log()`.
+
+---
+
 ## How to Run the Project
 
 ### Option 1: Direct Open in Browser
