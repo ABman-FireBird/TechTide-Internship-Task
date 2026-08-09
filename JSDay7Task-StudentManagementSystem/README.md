@@ -78,3 +78,7 @@ That's it — the app runs entirely in the browser. Any student you add will be 
 - Search, department filter, and marks sorting work together — they build a filtered/sorted copy of the array and render that, without changing the original data.
 - The dashboard (total, average, highest, lowest marks) is recalculated automatically after every add, edit, or delete.
 - All data is saved to Local Storage after every change and reloaded automatically when the page opens, so records aren't lost on refresh.
+
+## Screenshots
+
+Desktop and mobile screenshots of this project are included in the PDF report submitted alongside this repository.
