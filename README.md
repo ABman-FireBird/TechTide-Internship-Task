@@ -574,6 +574,49 @@ organizing data using objects and arrays of objects.
 
 ---
 
+## JSDay7Task — Student Management System (Full Project)
+
+### Objective
+
+Apply everything learned so far — variables, conditions, loops, functions,
+arrays, and objects — to build a complete, real-world front-end application:
+a Student Management System with a dashboard, registration form, and full
+CRUD functionality, styled entirely with Tailwind CSS.
+
+### Features Implemented
+
+- ✅ **Dashboard:** Live stats for Total Students, Average Marks, Highest
+  Marks, and Lowest Marks, recalculated automatically after every change.
+- ✅ **Student Registration Form:** Collects Name, Roll Number, Department,
+  Semester, Email, and Marks, with full validation (required fields, marks
+  range 0–100, unique roll number).
+- ✅ **Student Records Table:** Displays Name, Roll Number, Department,
+  Semester, Email, Marks, and an automatically calculated Grade (A–F).
+- ✅ **CRUD Operations:** Add, Edit, and Delete students — the same form is
+  reused for both adding and editing.
+- ✅ **Search, Filter & Sort:** Search by name, filter by department, and
+  sort by marks (High to Low / Low to High), all working together.
+- ✅ **Bonus — Local Storage:** All student records persist across page
+  reloads using `localStorage`.
+- ✅ **Bonus — Delete Confirmation:** A confirmation prompt appears before
+  a student record is permanently removed.
+
+### JavaScript Concepts Used
+
+- Arrays of objects as the core data model
+- Functions for validation, rendering, calculations, and storage
+- Loops (`for...of`) for dashboard calculations and rendering
+- Conditional logic for validation and grade calculation
+- DOM manipulation and event listeners (`submit`, `input`, `change`, `click`)
+
+### File Location
+
+- `JSDay7Task/index.html` — page structure (navbar, dashboard, form, table, footer).
+- `JSDay7Task/script.js` — all application logic (CRUD, validation, search/filter/sort, Local Storage).
+- `JSDay7Task/README.md` — project-specific documentation.
+
+---
+
 ## How to Run the Project
 
 ### Option 1: Direct Open in Browser

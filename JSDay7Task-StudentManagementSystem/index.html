@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day - 7 (Student management system)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+
+    <nav class="bg-gray-900 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+
+                <a href="#dashboard" class="text-xl font-bold">
+                    Student Management System
+                </a>
+
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#dashboard" class="hover:text-blue-400 transition">
+                        Dashboard
+                    </a>
+
+                    <a href="#registration-form" class="hover:text-blue-400 transition">
+                        Register Student
+                    </a>
+
+                    <a href="#student-records" class="hover:text-blue-400 transition">
+                        Student Records
+                    </a>
+                </div>
+
+                <button
+                    type="button"
+                    class="md:hidden px-3 py-2 rounded hover:bg-gray-800 transition"
+                    onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
+                    aria-label="Toggle navigation menu">
+                    ☰
+                </button>
+            </div>
+
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <a href="#dashboard"
+                class="block py-2 hover:text-blue-400 transition">
+                    Dashboard
+                </a>
+
+                <a href="#registration-form"
+                class="block py-2 hover:text-blue-400 transition">
+                    Register Student
+                </a>
+
+                <a href="#student-records"
+                class="block py-2 hover:text-blue-400 transition">
+                    Student Records
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="dashboard">
+        <h2 class="text-2xl font-bold mb-4 text-center mt-8">Dashboard</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+            <div class="bg-green-100 shadow-md rounded-lg p-4">
+                <h3 class="text-lg font-bold" >Total Students</h3>
+                <p id="totalStudents" class="text-3xl font-bold mt-2">0</p>
+            </div>
+            <div class="bg-blue-100 shadow-md rounded-lg p-4">
+                <h3 class="text-lg font-bold">Average Marks</h3>
+                <p id="averageMarks" class="text-3xl font-bold mt-2">0</p>
+            </div>
+            <div class="bg-yellow-100 shadow-md rounded-lg p-4">
+                <h3 class="text-lg font-bold">Highest Marks</h3>
+                <p id="highestMarks" class="text-3xl font-bold mt-2">0</p>
+            </div>
+            <div class="bg-gray-100 shadow-md rounded-lg p-4">
+                <h3 class="text-lg font-bold">Lowest Marks</h3>
+                <p id="lowestMarks" class="text-3xl font-bold mt-2">0</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="registration-form">
+        <h2 class="text-2xl font-bold mb-4 text-center mt-8">Registration Form</h2>
+        <div class="max-w-md mx-auto bg-white shadow-md rounded-lg p-6">
+            <form id="form">
+                <label for="name" class="block font-medium mb-1">Enter Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter name" required class="border border-gray-300 rounded p-2 mb-4 w-full">
+
+                <label for="rollNumber" class="block font-medium mb-1">Enter Roll No.:</label>
+                <input type="text" id="rollNumber" name="rollNumber" placeholder="Enter Roll No." required class="border border-gray-300 rounded p-2 mb-4 w-full">
+
+                <label for="department" class="block font-medium mb-1">Select Department:</label>
+                <select id="department" name="department" class="border border-gray-300 rounded p-2 mb-4 w-full">
+                    <option value="">Select Department</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="it">Information Technology</option>
+                    <option value="se">Software Engineering</option>
+                    <option value="ds">Data Science</option>
+                    <option value="ai">Artificial Intelligence</option>
+                </select>
+
+                <label for="semester" class="block font-medium mb-1">Select Semester:</label>
+                <select id="semester" name="semester" class="border border-gray-300 rounded p-2 mb-4 w-full">
+                    <option value="">Select Semester</option>
+                    <option value="1">1st Semester</option>
+                    <option value="2">2nd Semester</option>
+                    <option value="3">3rd Semester</option>
+                    <option value="4">4th Semester</option>
+                    <option value="5">5th Semester</option>
+                    <option value="6">6th Semester</option>
+                    <option value="7">7th Semester</option>
+                    <option value="8">8th Semester</option>
+                </select>
+
+                <label for="email" class="block font-medium mb-1">Enter Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" required class="border border-gray-300 rounded p-2 mb-4 w-full">
+
+                <label for="marks" class="block font-medium mb-1">Enter Marks:</label>
+                <input type="number" id="marks" name="marks" min="0" max="100" placeholder="Enter marks" step="1" required class="border border-gray-300 rounded p-2 mb-3 w-full">
+
+                <input type="submit" id="submitButton" value="Add Student" class="bg-blue-500 text-white rounded p-2 w-full cursor-pointer hover:bg-blue-600 transition ease-in-out duration-300">
+            </form>
+        </div>
+    </section>
+    
+    <section id="student-records">
+        <h2 class="text-2xl font-bold mb-4 text-center mt-8">Student Records</h2>
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <input type="text" id="searchInput" placeholder="Search Student by Name" class="border border-gray-300 rounded p-2 mb-4 w-full">
+
+            <select id="filterDepartment" name="filterDepartment" class="border border-gray-300 rounded p-2 mb-4 w-full">
+                <option value="all">All departments</option>
+                <option value="cs">Computer Science</option>
+                <option value="it">Information Technology</option>
+                <option value="se">Software Engineering</option>        
+                <option value="ds">Data Science</option>
+                <option value="ai">Artificial Intelligence</option>
+            </select>
+
+            <select id="sortMarks" name="sortMarks" class="border border-gray-300 rounded p-2 mb-4 w-full">
+                <option value="">Sort by Marks</option>
+                <option value="high">High</option>
+                <option value="low">Low</option>
+            </select>
+        </div>
+
+        <div class="overflow-x-auto bg-white shadow-md rounded-lg p-4">
+            <table class="min-w-full bg-white border border-gray-300 shadow-md rounded-lg overflow-hidden">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="px-4 py-3 text-left font-semibold">Name</th>
+                        <th class="px-4 py-3 text-left font-semibold">Roll No.</th>
+                        <th class="px-4 py-3 text-left font-semibold">Department</th>
+                        <th class="px-4 py-3 text-left font-semibold">Semester</th>
+                        <th class="px-4 py-3 text-left font-semibold">Email</th>
+                        <th class="px-4 py-3 text-left font-semibold">Marks</th>
+                        <th class="px-4 py-3 text-left font-semibold">Grade</th>
+                        <th class="px-4 py-3 text-left font-semibold">Actions</th>
+                    </tr>
+                </thead>
+                
+                <tbody id="studentTableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white mt-12">
+        <div class="max-w-7xl mx-auto px-4 py-6 text-center">
+            <p class="font-semi-bold">
+                Student Management System
+            </p>
+
+            <p class="text-gray-400 text-sm mt-2">
+                Built with HTML, Tailwind CSS and Javascript
+            </p>
+
+            <p class="text-gray-500 text-sm mt-2">
+                &copy; 2026 Student Management System. All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+</body>
+</html>
