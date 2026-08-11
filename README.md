@@ -617,6 +617,52 @@ CRUD functionality, styled entirely with Tailwind CSS.
 
 ---
 
+## JSDay8Task — DOM Manipulation & Events
+
+### Objective
+
+Move from JavaScript running only in the console to JavaScript controlling
+a real webpage — selecting elements, changing their content and styles,
+creating/removing elements dynamically, and responding to user interaction.
+
+### JavaScript Concepts Used
+
+- The DOM (Document Object Model)
+- Selecting elements: `getElementById`, `querySelector`, `querySelectorAll`
+- Changing content: `textContent`, `innerHTML`
+- Changing styles/classes: `style`, `classList`
+- Creating and removing elements: `createElement`, `appendChild`, `.remove()`
+- Event handling: `addEventListener` (`click`, `input`)
+
+### Tasks Completed
+
+- ✅ **Task 1 — Change Page Content:** Clicking a button dynamically updates
+  the heading, paragraph, and the button's own text.
+- ✅ **Task 2 — Theme Changer:** Light Mode / Dark Mode buttons toggle the
+  page background and text color using `classList.add`/`classList.remove`,
+  with a live "Current Theme" indicator.
+- ✅ **Task 3 — Counter App:** `+`, `-`, and Reset buttons increment,
+  decrement, and reset a shared counter value.
+- ✅ **Task 4 — Dynamic List:** Text input + Add button creates new `<li>`
+  elements from user input and appends them to a list, clearing the input
+  afterward.
+- ✅ **Task 5 — Remove Items:** Every list item created in Task 4 includes
+  its own Delete button, which removes just that item from the page.
+- ✅ **Task 6 — Live Character Counter:** A textarea's character count
+  updates in real time as the user types, via the `input` event.
+- ✅ **Mini Project — Interactive Student Profile:** Clicking "Update
+  Profile" dynamically replaces the displayed Name, Department, Semester,
+  Skills, and Profile Image using data pulled from a JavaScript object —
+  no updated information is hard-coded into the HTML.
+
+### File Location
+
+- `JSDay8Task/index.html` — page structure for all 6 tasks plus the mini project.
+- `JSDay8Task/script.js` — all DOM manipulation and event-handling logic.
+- `JSDay8Task/README.md` — project-specific documentation.
+
+---
+
 ## How to Run the Project
 
 ### Option 1: Direct Open in Browser

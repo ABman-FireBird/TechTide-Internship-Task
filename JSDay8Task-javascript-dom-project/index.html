@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Day - 8 </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+     <!-- Task 1 - Change Page Content  -->
+    <h2 id="heading" class="text-2xl font-bold mb-2">Task 1 </h2>
+    <p id="paragraph" class="text-gray-600 mb-4">This is the paragraph for Task 1.</p>
+    <button id="button" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Button</button>
+
+   
+    <br><br>
+    <!-- Task 2 - Theme Changer -->
+    <button id="light" class="bg-yellow-300 text-black px-4 py-2 rounded hover:bg-yellow-200 mt-4">Light Mode</button>
+    <button id="dark" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 mt-4">Dark Mode</button>
+    <p id="themeText">Current Theme: Light</p>
+    
+    
+    <br><br>
+    <!-- Task 3 – Counter App -->
+     <button id="plus" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">+</button>
+     <button id="minus" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">-</button>
+     <button id="reset" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">reset</button>
+     <p id="counter" class="text-2xl font-bold my-4">0</p>
+
+
+    <br></br>
+    <!-- Task 4 & 5 - Dynamic List With Delete -->
+    <input type="text" id="input" placeholder="Enter item" class="border border-gray-300 px-2 py-1 rounded">
+    <button id="addItem" class="bg-purple-400 text-white px-4 py-2 rounded hover:bg-purple-500">Add Item</button>
+    <ul id="list"></ul>
+
+
+    <br><br>
+    <!-- Task 6 – Live Character Counter -->
+    <textarea id="textarea" placeholder="Type Something..." class="border border-gray-300 px-2 py-1 rounded">
+    </textarea>
+    <p id="count">Character Count: 0</p>
+
+
+    <br><br>
+    <br><br>
+    <!-- Mini Project – Interactive Student Profile -->
+    <div id="profile" class="space-y-1">
+        <h3 id="name" class="text-xl font-bold ">Student Name: Abdullah Farooq</h3>
+        <p id="department">Department: Computer Science</p>
+        <p id="semester">Semester: 7th</p>
+        <p id="skills">Skills: ML, Python, Javascript</p>
+        <img id="profileImg" src="https://placehold.co/120" alt="Profile Img" class="w-32 h-32 rounded-full">        
+    </div>
+    <button id="updateProfile" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 mt-2">Update Profile</button>
+
+</body>
+</html>
