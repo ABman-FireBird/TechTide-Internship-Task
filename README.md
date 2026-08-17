@@ -663,6 +663,47 @@ creating/removing elements dynamically, and responding to user interaction.
 
 ---
 
+## Week 6, Day 1 — React.js Basics: Personal Profile Page
+
+### Objective
+
+Begin learning React.js by understanding components, JSX, component
+reusability, and dynamic data rendering — building a personal profile page
+styled with Tailwind CSS.
+
+### React Concepts Used
+
+- Creating a React app with Vite
+- JSX syntax and rendering
+- Functional components
+- Component reusability (Navbar, Profile, Skills, Footer)
+- Rendering dynamic data using JavaScript variables
+- Rendering arrays using `.map()` (Skills section)
+- Styling with Tailwind CSS
+
+### Features Implemented
+
+- ✅ **Navbar:** Displays name/logo and navigation links (Home, About,
+  Skills, Contacts) with hover transition effects.
+- ✅ **Profile Section:** Displays profile image, name, university, degree,
+  semester, and a short introduction — all rendered dynamically from
+  JavaScript variables instead of hardcoded repeated text — plus a CTA
+  button.
+- ✅ **Skills Section:** Skills stored in a JavaScript array and rendered
+  dynamically as styled badges using `.map()`.
+- ✅ **Footer:** Displays name, copyright, and social links (GitHub,
+  LinkedIn).
+- ✅ **Experiment (Task 7):** Added hover effects on nav links, a gradient
+  background on the profile section, an extra skill badge, and a CTA
+  button beyond the base requirements.
+
+### File Location
+
+- `react-internship-day1/` — full Vite + React + Tailwind project.
+- `react-internship-day1/README.md` — project-specific documentation.
+
+---
+
 ## How to Run the Project
 
 ### Option 1: Direct Open in Browser
