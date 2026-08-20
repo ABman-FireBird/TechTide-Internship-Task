@@ -704,6 +704,67 @@ styled with Tailwind CSS.
 
 ---
 
+## Week 6, Day 2 — React.js: Props & Reusable Components
+
+### Objective
+
+Learn how to pass data between components using props and build reusable
+components instead of repeating markup, culminating in a responsive Tech
+Company Landing Page built with React and Tailwind CSS.
+
+### React Concepts Used
+
+- Passing and receiving props
+- Dynamic props (data-driven, not hardcoded)
+- Props with objects (arrays of product/team/feature objects)
+- Reusable components fed different data through props
+- Rendering dynamic data with `.map()`
+- Component composition across a full multi-section page
+
+### Tasks Completed
+
+- ✅ **Task 1 — ProfileCard:** One reusable component rendered 3 times
+  with different name, role, university, image, and description props.
+- ✅ **Task 2 — SkillCard:** One reusable component rendered 5 times with
+  different skill name, level, experience, and icon props.
+- ✅ **Task 3 — ProductCard:** One reusable component rendered from an
+  array of 6 product objects using `.map()`.
+- ✅ **Task 4 — Button:** One reusable button component (`text`, `variant`,
+  `size` props) reused for Buy Now, Learn More, Contact Us, and View
+  Details.
+- ✅ **Task 5 — Team Section:** One reusable `TeamCard` component rendered
+  from an array of 6 member objects using `.map()`, including social links.
+- ✅ **Mini Project — Tech Company Landing Page:** Full responsive landing
+  page combining a sticky Navbar, Hero section, Features grid, Products
+  grid, Team grid, and Footer — built entirely from reusable components
+  (`Navbar`, `Hero`, `Button`, `FeatureCard`, `ProductCard`, `TeamCard`,
+  `Footer`) styled with Tailwind CSS.
+
+### Features Implemented
+
+- ✅ **Navbar:** Sticky header with logo, nav links with hover transitions,
+  and a reusable CTA button.
+- ✅ **Hero:** Heading, description, CTA button, and image in a responsive
+  side-by-side (desktop) / stacked (mobile) layout.
+- ✅ **Features Section:** 4 reusable feature cards rendered via `.map()`.
+- ✅ **Products Section:** 6 reusable product cards rendered via `.map()`,
+  each with image, category, price, rating, availability, and an
+  Add to Cart button.
+- ✅ **Team Section:** 4 reusable team member cards rendered via `.map()`,
+  each with a clickable social link.
+- ✅ **Footer:** Company info, site navigation links, and social media
+  links, laid out responsively.
+- ✅ **UI Polish:** Card styling (shadow, rounded corners, hover states),
+  consistent section headings with subtitles and accent bars, and a fully
+  responsive grid layout across breakpoints.
+
+### File Location
+
+- `react-day-2/` — full Vite + React + Tailwind project.
+- `react-day-2/README.md` — project-specific documentation.
+
+---
+
 ## How to Run the Project
 
 ### Option 1: Direct Open in Browser
